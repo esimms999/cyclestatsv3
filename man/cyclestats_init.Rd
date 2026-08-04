@@ -7,6 +7,6 @@
 cyclestats_init()
 }
 \description{
-Reads the Strava activities CSV, filters to cycling rides, converts units,
-and creates the global objects used by the UI and server.
+Loads the pre-downloaded Ride with GPS activities (.rds) and builds
+the objects used by the UI and server.
 }

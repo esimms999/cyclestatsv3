@@ -1,6 +1,6 @@
 Package: cyclestatsv2
 Title: Analysis of Cycling Rides
-Version: 2.01
+Version: 3.00
 Authors@R: 
     person("E.", "Simms", , "esimms@yahoo.com", role = c("aut", "cre"),
            comment = c(ORCID = "0009-0009-1780-7533"))
