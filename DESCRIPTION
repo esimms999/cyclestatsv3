@@ -17,13 +17,10 @@ Imports:
     DT,
     ggplot2,
     golem (>= 0.4.0),
-    lubridate,
     markdown,
     plotly,
-    readr,
     shiny,
-    shinyjs,
-    stringr
+    shinyjs
 Suggests:
     knitr,
     lintr,
