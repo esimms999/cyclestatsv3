@@ -7,11 +7,12 @@ excluded from the package (see `.Rbuildignore`).
 ## get_data.R
 
 Downloads cycling activity data from the Ride with GPS API and writes
-`activities.rds`.
+`activities.rds` directly to `inst/extdata/activities.rds`, which is
+what the app reads at runtime.
 
 Run manually, only when you want to refresh the data:
 
     source("data-raw/get_data.R")
 
-After running, copy the resulting `activities.rds` into
-`inst/extdata/activities.rds` so the app picks up the refreshed data.
+No copying is required — the script writes straight to
+`inst/extdata/activities.rds`, overwriting the existing file.
