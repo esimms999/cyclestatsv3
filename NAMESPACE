@@ -8,5 +8,7 @@ import(ggplot2)
 import(plotly, except = last_plot)
 import(shiny)
 import(shinyjs, except = c(runExample))
-importFrom(DT,DTOutput)
-importFrom(DT,renderDT)
+importFrom(DT,
+  DTOutput,
+  renderDT
+)

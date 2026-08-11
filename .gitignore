@@ -12,3 +12,6 @@
 *.tgz
 .positai
 docs
+
+# Data pull scripts (may contain API keys/tokens)
+data-raw/*.R

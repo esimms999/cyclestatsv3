@@ -2,7 +2,7 @@
 % Please edit documentation in R/run_app.R
 \name{run_app}
 \alias{run_app}
-\title{Run the cyclestatsv2 Shiny Application}
+\title{Run the cyclestatsv3 Shiny Application}
 \usage{
 run_app(
   on_start = NULL,
