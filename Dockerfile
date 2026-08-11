@@ -18,17 +18,17 @@ RUN Rscript -e "install.packages(c('remotes', 'fs'))"
 # Cache dependency installation separately from app source.
 # Only DESCRIPTION is copied here so this layer is reused when
 # only the app code changes (not its dependencies).
-COPY DESCRIPTION /build/cyclestatsv2/DESCRIPTION
+COPY DESCRIPTION /build/cyclestatsv3/DESCRIPTION
 RUN Rscript -e "remotes::install_deps( \
-      '/build/cyclestatsv2', \
+      '/build/cyclestatsv3', \
       dependencies = c('Depends', 'Imports', 'LinkingTo') \
     )"
 
 # Copy full source and install the package
-COPY . /build/cyclestatsv2
-RUN R CMD INSTALL /build/cyclestatsv2
+COPY . /build/cyclestatsv3
+RUN R CMD INSTALL /build/cyclestatsv3
 
 EXPOSE 3838
 
 CMD ["Rscript", "-e", \
-     "cyclestatsv2::run_app(options = list(host = '0.0.0.0', port = 3838))"]
+     "cyclestatsv3::run_app(options = list(host = '0.0.0.0', port = 3838))"]

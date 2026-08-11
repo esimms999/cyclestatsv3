@@ -3,7 +3,7 @@
 ^rsconnect$
 ^\.rscignore$
 ^R/_disable_autoload\.R$
-^cyclestatsv2\.Rproj$
+^cyclestatsv3\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^\.positai$
@@ -15,3 +15,5 @@
 ^\.lintr$
 ^Dockerfile$
 ^\.dockerignore$
+^manifest\.json$
+^data-raw$

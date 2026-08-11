@@ -1,4 +1,4 @@
-# cyclestatsv2
+# cyclestatsv3
 
 Analysis of Cycling Rides
 
@@ -7,7 +7,7 @@ Analysis of Cycling Rides
 
 ## Overview
 
-`cyclestatsv2` is a Shiny application for exploring and analyzing personal cycling ride data. It is built as an R package using the [golem](https://thinkr-open.github.io/golem/) framework and draws from pre-downloaded [Strava](https://www.strava.com/) activity data.
+`cyclestatsv3` is a Shiny application for exploring and analyzing personal cycling ride data. It is built as an R package using the [golem](https://thinkr-open.github.io/golem/) framework and draws from pre-downloaded [Strava](https://www.strava.com/) activity data.
 
 ## Features
 
@@ -20,7 +20,7 @@ The app has a sidebar layout with a year filter and three main tabs:
 
 ## Installation
 
-Clone the repository and open `cyclestatsv2.Rproj` in RStudio. Then install `devtools` if needed and install all package dependencies:
+Clone the repository and open `cyclestatsv3.Rproj` in RStudio. Then install `devtools` if needed and install all package dependencies:
 
 ```r
 install.packages("devtools")   # skip if already installed
@@ -35,7 +35,7 @@ After dependencies are in place, build and install the package via **Build → I
 devtools::install()
 ```
 
-See the [Development Setup](https://esimms999.github.io/cyclestatsv2/articles/development_setup.html) article for the full workflow including data file setup and common dev tasks.
+See the [Development Setup](https://esimms999.github.io/cyclestatsv3/articles/development_setup.html) article for the full workflow including data file setup and common dev tasks.
 
 ## Running the App
 

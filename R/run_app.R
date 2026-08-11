@@ -1,4 +1,4 @@
-#' Run the cyclestatsv2 Shiny Application
+#' Run the cyclestatsv3 Shiny Application
 #'
 #' Main entry point. Initialises data then launches the app.
 #'

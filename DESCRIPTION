@@ -1,4 +1,4 @@
-Package: cyclestatsv2
+Package: cyclestats
 Title: Analysis of Cycling Rides
 Version: 3.00
 Authors@R: 
@@ -17,13 +17,10 @@ Imports:
     DT,
     ggplot2,
     golem (>= 0.4.0),
-    lubridate,
     markdown,
     plotly,
-    readr,
     shiny,
-    shinyjs,
-    stringr
+    shinyjs
 Suggests:
     knitr,
     lintr,
@@ -32,8 +29,8 @@ Suggests:
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Config/testthat/edition: 3
-Config/golem_name: cyclestatsv2
-Config/golem_version_dev: 2.01
+Config/golem_name: cyclestatsv3
+Config/golem_version_dev: 3.00
 Language: en-US
-URL: https://esimms999.github.io/cyclestatsv2/
-Config/roxygen2/version: 8.0.0
+URL: https://esimms999.github.io/cyclestatsv3/
+Config/roxygen2/version: 8.1.0
