@@ -1,7 +1,7 @@
 # Development Setup
 
 This article walks through everything needed to set up a local
-development environment for `cyclestatsv2` after cloning the repository.
+development environment for `cyclestatsv3` after cloning the repository.
 
 ## Prerequisites
 
@@ -11,7 +11,7 @@ development environment for `cyclestatsv2` after cloning the repository.
 
 ## 1. Clone and Open the Project
 
-Clone the repository and open `cyclestatsv2.Rproj` in RStudio. Opening
+Clone the repository and open `cyclestatsv3.Rproj` in RStudio. Opening
 the `.Rproj` file ensures the working directory, build tools, and
 package settings are all configured correctly.
 
@@ -130,7 +130,7 @@ a self-contained image based on `rocker/r-ver`. The app listens on port
   Windows/macOS, or the [Docker
   Engine](https://docs.docker.com/engine/install/) on Linux
 - A [Docker Hub](https://hub.docker.com/) account with push access to
-  `esimms999/cyclestatsv2`
+  `esimms999/cyclestatsv3`
 - The data file present at `inst/extdata/activities.csv` before building
   — it is copied into the image at build time
 
@@ -139,13 +139,13 @@ a self-contained image based on `rocker/r-ver`. The app listens on port
 Run from the repository root (where the `Dockerfile` lives):
 
 ``` bash
-docker build -t esimms999/cyclestatsv2:latest .
+docker build -t esimms999/cyclestatsv3:latest .
 ```
 
 To tag a specific version alongside `latest`:
 
 ``` bash
-docker build -t esimms999/cyclestatsv2:latest -t esimms999/cyclestatsv2:2.00 .
+docker build -t esimms999/cyclestatsv3:latest -t esimms999/cyclestatsv3:2.00 .
 ```
 
 ### Push to Docker Hub
@@ -154,13 +154,13 @@ Log in (only required once per session), then push:
 
 ``` bash
 docker login
-docker push esimms999/cyclestatsv2:latest
+docker push esimms999/cyclestatsv3:latest
 ```
 
 If you also tagged a version:
 
 ``` bash
-docker push esimms999/cyclestatsv2:2.00
+docker push esimms999/cyclestatsv3:2.00
 ```
 
 ### Run a container
@@ -168,7 +168,7 @@ docker push esimms999/cyclestatsv2:2.00
 Pull and run from Docker Hub:
 
 ``` bash
-docker run --rm -p 3838:3838 esimms999/cyclestatsv2:latest
+docker run --rm -p 3838:3838 esimms999/cyclestatsv3:latest
 ```
 
 Then open <http://localhost:3838> in a browser. The `--rm` flag removes
@@ -176,11 +176,11 @@ the container automatically when it stops. To run it in the background
 instead:
 
 ``` bash
-docker run -d --name cyclestatsv2 -p 3838:3838 esimms999/cyclestatsv2:latest
+docker run -d --name cyclestatsv3 -p 3838:3838 esimms999/cyclestatsv3:latest
 ```
 
 Stop and remove the background container when done:
 
 ``` bash
-docker stop cyclestatsv2 && docker rm cyclestatsv2
+docker stop cyclestatsv3 && docker rm cyclestatsv3
 ```

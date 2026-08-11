@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Development Setup • cyclestatsv2</title>
+<title>Development Setup • cyclestats</title>
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
 <script src="../deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
@@ -18,7 +18,7 @@
 
     <nav class="navbar navbar-expand-lg fixed-top bg-light" data-bs-theme="light" aria-label="Site navigation"><div class="container">
 
-    <a class="navbar-brand me-2" href="../index.html">cyclestatsv2</a>
+    <a class="navbar-brand me-2" href="../index.html">cyclestats</a>
 
     <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">3.00</small>
 
@@ -60,7 +60,7 @@
     
     
 <p>This article walks through everything needed to set up a local
-development environment for <code>cyclestatsv2</code> after cloning the
+development environment for <code>cyclestatsv3</code> after cloning the
 repository.</p>
 <div class="section level2">
 <h2 id="prerequisites">Prerequisites<a class="anchor" aria-label="anchor" href="#prerequisites"></a>
@@ -74,7 +74,7 @@ repository.</p>
 <div class="section level2">
 <h2 id="clone-and-open-the-project">1. Clone and Open the Project<a class="anchor" aria-label="anchor" href="#clone-and-open-the-project"></a>
 </h2>
-<p>Clone the repository and open <code>cyclestatsv2.Rproj</code> in
+<p>Clone the repository and open <code>cyclestatsv3.Rproj</code> in
 RStudio. Opening the <code>.Rproj</code> file ensures the working
 directory, build tools, and package settings are all configured
 correctly.</p>
@@ -198,7 +198,7 @@ container.</p>
 Desktop</a> on Windows/macOS, or the <a href="https://docs.docker.com/engine/install/" class="external-link">Docker Engine</a> on
 Linux</li>
 <li>A <a href="https://hub.docker.com/" class="external-link">Docker Hub</a> account with push
-access to <code>esimms999/cyclestatsv2</code>
+access to <code>esimms999/cyclestatsv3</code>
 </li>
 <li>The data file present at <code>inst/extdata/activities.csv</code>
 before building — it is copied into the image at build time</li>
@@ -209,30 +209,30 @@ before building — it is copied into the image at build time</li>
 </h3>
 <p>Run from the repository root (where the <code>Dockerfile</code>
 lives):</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="ex">docker</span> build <span class="at">-t</span> esimms999/cyclestatsv2:latest .</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="ex">docker</span> build <span class="at">-t</span> esimms999/cyclestatsv3:latest .</span></code></pre></div>
 <p>To tag a specific version alongside <code>latest</code>:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="ex">docker</span> build <span class="at">-t</span> esimms999/cyclestatsv2:latest <span class="at">-t</span> esimms999/cyclestatsv2:2.00 .</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="ex">docker</span> build <span class="at">-t</span> esimms999/cyclestatsv3:latest <span class="at">-t</span> esimms999/cyclestatsv3:2.00 .</span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="push-to-docker-hub">Push to Docker Hub<a class="anchor" aria-label="anchor" href="#push-to-docker-hub"></a>
 </h3>
 <p>Log in (only required once per session), then push:</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="ex">docker</span> login</span>
-<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="ex">docker</span> push esimms999/cyclestatsv2:latest</span></code></pre></div>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="ex">docker</span> push esimms999/cyclestatsv3:latest</span></code></pre></div>
 <p>If you also tagged a version:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="ex">docker</span> push esimms999/cyclestatsv2:2.00</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="ex">docker</span> push esimms999/cyclestatsv3:2.00</span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="run-a-container">Run a container<a class="anchor" aria-label="anchor" href="#run-a-container"></a>
 </h3>
 <p>Pull and run from Docker Hub:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">--rm</span> <span class="at">-p</span> 3838:3838 esimms999/cyclestatsv2:latest</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">--rm</span> <span class="at">-p</span> 3838:3838 esimms999/cyclestatsv3:latest</span></code></pre></div>
 <p>Then open <a href="http://localhost:3838" class="external-link uri">http://localhost:3838</a> in a browser. The
 <code>--rm</code> flag removes the container automatically when it
 stops. To run it in the background instead:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-d</span> <span class="at">--name</span> cyclestatsv2 <span class="at">-p</span> 3838:3838 esimms999/cyclestatsv2:latest</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-d</span> <span class="at">--name</span> cyclestatsv3 <span class="at">-p</span> 3838:3838 esimms999/cyclestatsv3:latest</span></code></pre></div>
 <p>Stop and remove the background container when done:</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="ex">docker</span> stop cyclestatsv2 <span class="kw">&amp;&amp;</span> <span class="ex">docker</span> rm cyclestatsv2</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="ex">docker</span> stop cyclestatsv3 <span class="kw">&amp;&amp;</span> <span class="ex">docker</span> rm cyclestatsv3</span></code></pre></div>
 </div>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>

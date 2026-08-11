@@ -7,13 +7,13 @@
 
 ## Citation
 
-Simms E (2026). *cyclestatsv2: Analysis of Cycling Rides*. R package
-version 3.00, <https://esimms999.github.io/cyclestatsv2/>.
+Simms E (2026). *cyclestats: Analysis of Cycling Rides*. R package
+version 3.00, <https://esimms999.github.io/cyclestatsv3/>.
 
     @Manual{,
-      title = {cyclestatsv2: Analysis of Cycling Rides},
+      title = {cyclestats: Analysis of Cycling Rides},
       author = {E. Simms},
       year = {2026},
       note = {R package version 3.00},
-      url = {https://esimms999.github.io/cyclestatsv2/},
+      url = {https://esimms999.github.io/cyclestatsv3/},
     }
