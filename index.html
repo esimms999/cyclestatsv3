@@ -95,9 +95,8 @@
 <div class="section level2">
 <h2 id="data">Data<a class="anchor" aria-label="anchor" href="#data"></a>
 </h2>
-<p>The app reads from a pre-downloaded <code>activities.rds</code> file built from the <a href="https://ridewithgps.com/" class="external-link">Ride with GPS</a> API. Place the file at:</p>
-<pre><code><span><span class="va">inst</span><span class="op">/</span><span class="va">extdata</span><span class="op">/</span><span class="va">activities.rds</span></span></code></pre>
-<p>Use the <code>data-raw/get_data.R</code> script to (re)generate this file: it authenticates against the Ride with GPS API, paginates through all trips, and processes them into a tidy data frame with the following columns:</p>
+<p>The app reads from a pre-downloaded <code>activities.rds</code> file built from the <a href="https://ridewithgps.com/" class="external-link">Ride with GPS</a> API.</p>
+<p>Use the <code>data-raw/get_data.R</code> script to (re)generate the inst/extdata/activities.rds file: it authenticates against the Ride with GPS API, paginates through all trips, and processes them into a tidy data frame with the following columns:</p>
 <table class="table">
 <colgroup>
 <col width="50%">
@@ -145,7 +144,7 @@
 <div class="section level2">
 <h2 id="deployment">Deployment<a class="anchor" aria-label="anchor" href="#deployment"></a>
 </h2>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">rsconnect</span><span class="fu">::</span><span class="fu">deployApp</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
