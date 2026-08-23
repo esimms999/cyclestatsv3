@@ -1,0 +1,12 @@
+name: cyclestatsv3
+title: cyclestatsv3
+username: esimms999
+account: esimms999
+server: connect.posit.cloud
+hostUrl: https://api.connect.posit.cloud/v1
+appId: 01a02e9d-96e1-7fff-0e79-b7d13f71d7fa
+bundleId:
+url: https://connect.posit.cloud/esimms999/content/01a02e9d-96e1-7fff-0e79-b7d13f71d7fa
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
