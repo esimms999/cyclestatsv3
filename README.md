@@ -48,13 +48,9 @@ Or use the **Run App** button in RStudio with `app.R` open.
 
 ## Data
 
-The app reads from a pre-downloaded `activities.rds` file built from the [Ride with GPS](https://ridewithgps.com/) API. Place the file at:
+The app reads from a pre-downloaded `activities.rds` file built from the [Ride with GPS](https://ridewithgps.com/) API. 
 
-```
-inst/extdata/activities.rds
-```
-
-Use the `data-raw/get_data.R` script to (re)generate this file: it authenticates against the Ride with GPS API, paginates through all trips, and processes them into a tidy data frame with the following columns:
+Use the `data-raw/get_data.R` script to (re)generate the inst/extdata/activities.rds file: it authenticates against the Ride with GPS API, paginates through all trips, and processes them into a tidy data frame with the following columns:
 
 | Column | Description |
 |---|---|
