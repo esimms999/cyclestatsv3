@@ -48,17 +48,19 @@ devtools::install()
 
 ## 5. Add the Data File
 
-The app reads from a Strava bulk export. Place your `activities.csv` at:
+The app reads from a pre-downloaded [Ride with
+GPS](https://ridewithgps.com/) export. Place your `activities.rds` at:
 
-    inst/extdata/activities.csv
+    inst/extdata/activities.rds
 
-To obtain this file, log in to Strava and go to **My Account → Download
-or Delete Your Account → Request Your Archive**. The resulting zip
-contains `activities.csv`.
+To obtain this file, run `data-raw/get_data.R`. It authenticates against
+the Ride with GPS API using your API key and auth token (set via the
+`RWGPS_API_KEY` and `RWGPS_AUTH_TOKEN` environment variables), paginates
+through all of your trips, and writes the processed result to
+`inst/extdata/activities.rds`.
 
-The app expects the standard Strava export column layout and retains
-only rows where `Activity Type == "Ride"`. Distances are converted from
-kilometres to miles automatically.
+The script retains only cycling activities and converts distances from
+meters to miles automatically.
 
 ## 6. Run the App
 
@@ -131,7 +133,7 @@ a self-contained image based on `rocker/r-ver`. The app listens on port
   Engine](https://docs.docker.com/engine/install/) on Linux
 - A [Docker Hub](https://hub.docker.com/) account with push access to
   `esimms999/cyclestatsv3`
-- The data file present at `inst/extdata/activities.csv` before building
+- The data file present at `inst/extdata/activities.rds` before building
   — it is copied into the image at build time
 
 ### Build the image

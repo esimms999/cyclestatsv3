@@ -54,7 +54,7 @@
 <div class="section level2">
 <h2 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
 </h2>
-<p><code>cyclestatsv3</code> is a Shiny application for exploring and analyzing personal cycling ride data. It is built as an R package using the <a href="https://thinkr-open.github.io/golem/" class="external-link">golem</a> framework and draws from pre-downloaded <a href="https://www.strava.com/" class="external-link">Strava</a> activity data.</p>
+<p><code>cyclestatsv3</code> is a Shiny application for exploring and analyzing personal cycling ride data. It is built as an R package using the <a href="https://thinkr-open.github.io/golem/" class="external-link">golem</a> framework and draws from pre-downloaded <a href="https://ridewithgps.com/" class="external-link">Ride with GPS</a> activity data.</p>
 </div>
 <div class="section level2">
 <h2 id="features">Features<a class="anchor" aria-label="anchor" href="#features"></a>
@@ -95,50 +95,52 @@
 <div class="section level2">
 <h2 id="data">Data<a class="anchor" aria-label="anchor" href="#data"></a>
 </h2>
-<p>The app reads from a pre-downloaded <code>activities.csv</code> exported from Strava. Place the file at:</p>
-<pre><code><span><span class="va">inst</span><span class="op">/</span><span class="va">extdata</span><span class="op">/</span><span class="va">activities.csv</span></span></code></pre>
-<p>This is the standard Strava bulk export format (available from your Strava account settings under <strong>My Account → Download or Delete Your Account</strong>). The app uses the following columns by position and name:</p>
+<p>The app reads from a pre-downloaded <code>activities.rds</code> file built from the <a href="https://ridewithgps.com/" class="external-link">Ride with GPS</a> API. Place the file at:</p>
+<pre><code><span><span class="va">inst</span><span class="op">/</span><span class="va">extdata</span><span class="op">/</span><span class="va">activities.rds</span></span></code></pre>
+<p>Use the <code>data-raw/get_data.R</code> script to (re)generate this file: it authenticates against the Ride with GPS API, paginates through all trips, and processes them into a tidy data frame with the following columns:</p>
 <table class="table">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
 <thead><tr>
 <th>Column</th>
-<th>Strava export name</th>
+<th>Description</th>
 </tr></thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>Activity ID</td>
+<td><code>activity_id</code></td>
+<td>Trip ID</td>
 </tr>
 <tr>
-<td>2</td>
-<td>Activity Date</td>
+<td><code>activity_name</code></td>
+<td>Trip name</td>
 </tr>
 <tr>
-<td>3</td>
-<td>Activity Name</td>
+<td><code>activity_datetime</code></td>
+<td>Departure timestamp</td>
 </tr>
 <tr>
-<td>4</td>
-<td>Activity Type</td>
+<td><code>activity_date</code></td>
+<td>Departure date</td>
 </tr>
 <tr>
-<td>5</td>
-<td>Distance</td>
+<td>
+<code>activity_year</code> / <code>activity_month</code> / <code>activity_year_month</code>
+</td>
+<td>Derived date parts</td>
 </tr>
 <tr>
-<td>6</td>
-<td>Moving Time</td>
+<td><code>activity_distance</code></td>
+<td>Distance in miles</td>
 </tr>
 <tr>
-<td>7</td>
-<td><em>(reserved)</em></td>
-</tr>
-<tr>
-<td>17</td>
-<td><em>(avg speed source)</em></td>
+<td><code>activity_avg_speed</code></td>
+<td>Average speed in mph</td>
 </tr>
 </tbody>
 </table>
-<p>Only rows where <code>Activity Type == "Ride"</code> are retained. Distances are converted from kilometres to miles.</p>
+<p>Only cycling activities are retained (<code>activity_type</code> starting with <code>cycling</code>, or <code>unknown:generic</code>). Distances are converted from meters to miles.</p>
 </div>
 <div class="section level2">
 <h2 id="deployment">Deployment<a class="anchor" aria-label="anchor" href="#deployment"></a>

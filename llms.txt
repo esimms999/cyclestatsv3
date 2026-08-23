@@ -10,7 +10,7 @@ MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 `cyclestatsv3` is a Shiny application for exploring and analyzing
 personal cycling ride data. It is built as an R package using the
 [golem](https://thinkr-open.github.io/golem/) framework and draws from
-pre-downloaded [Strava](https://www.strava.com/) activity data.
+pre-downloaded [Ride with GPS](https://ridewithgps.com/) activity data.
 
 ## Features
 
@@ -66,28 +66,29 @@ Or use the **Run App** button in RStudio with `app.R` open.
 
 ## Data
 
-The app reads from a pre-downloaded `activities.csv` exported from
-Strava. Place the file at:
+The app reads from a pre-downloaded `activities.rds` file built from the
+[Ride with GPS](https://ridewithgps.com/) API. Place the file at:
 
-    inst/extdata/activities.csv
+    inst/extdata/activities.rds
 
-This is the standard Strava bulk export format (available from your
-Strava account settings under **My Account → Download or Delete Your
-Account**). The app uses the following columns by position and name:
+Use the `data-raw/get_data.R` script to (re)generate this file: it
+authenticates against the Ride with GPS API, paginates through all
+trips, and processes them into a tidy data frame with the following
+columns:
 
-| Column | Strava export name   |
-|--------|----------------------|
-| 1      | Activity ID          |
-| 2      | Activity Date        |
-| 3      | Activity Name        |
-| 4      | Activity Type        |
-| 5      | Distance             |
-| 6      | Moving Time          |
-| 7      | *(reserved)*         |
-| 17     | *(avg speed source)* |
+| Column | Description |
+|----|----|
+| `activity_id` | Trip ID |
+| `activity_name` | Trip name |
+| `activity_datetime` | Departure timestamp |
+| `activity_date` | Departure date |
+| `activity_year` / `activity_month` / `activity_year_month` | Derived date parts |
+| `activity_distance` | Distance in miles |
+| `activity_avg_speed` | Average speed in mph |
 
-Only rows where `Activity Type == "Ride"` are retained. Distances are
-converted from kilometres to miles.
+Only cycling activities are retained (`activity_type` starting with
+`cycling`, or `unknown:generic`). Distances are converted from meters to
+miles.
 
 ## Deployment
 

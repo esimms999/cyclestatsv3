@@ -108,15 +108,17 @@ packages are skipped.</p>
 <div class="section level2">
 <h2 id="add-the-data-file">5. Add the Data File<a class="anchor" aria-label="anchor" href="#add-the-data-file"></a>
 </h2>
-<p>The app reads from a Strava bulk export. Place your
-<code>activities.csv</code> at:</p>
-<pre><code><span><span class="va">inst</span><span class="op">/</span><span class="va">extdata</span><span class="op">/</span><span class="va">activities.csv</span></span></code></pre>
-<p>To obtain this file, log in to Strava and go to <strong>My Account →
-Download or Delete Your Account → Request Your Archive</strong>. The
-resulting zip contains <code>activities.csv</code>.</p>
-<p>The app expects the standard Strava export column layout and retains
-only rows where <code>Activity Type == "Ride"</code>. Distances are
-converted from kilometres to miles automatically.</p>
+<p>The app reads from a pre-downloaded <a href="https://ridewithgps.com/" class="external-link">Ride with GPS</a> export. Place your
+<code>activities.rds</code> at:</p>
+<pre><code><span><span class="va">inst</span><span class="op">/</span><span class="va">extdata</span><span class="op">/</span><span class="va">activities.rds</span></span></code></pre>
+<p>To obtain this file, run <code>data-raw/get_data.R</code>. It
+authenticates against the Ride with GPS API using your API key and auth
+token (set via the <code>RWGPS_API_KEY</code> and
+<code>RWGPS_AUTH_TOKEN</code> environment variables), paginates through
+all of your trips, and writes the processed result to
+<code>inst/extdata/activities.rds</code>.</p>
+<p>The script retains only cycling activities and converts distances
+from meters to miles automatically.</p>
 </div>
 <div class="section level2">
 <h2 id="run-the-app">6. Run the App<a class="anchor" aria-label="anchor" href="#run-the-app"></a>
@@ -200,7 +202,7 @@ Linux</li>
 <li>A <a href="https://hub.docker.com/" class="external-link">Docker Hub</a> account with push
 access to <code>esimms999/cyclestatsv3</code>
 </li>
-<li>The data file present at <code>inst/extdata/activities.csv</code>
+<li>The data file present at <code>inst/extdata/activities.rds</code>
 before building — it is copied into the image at build time</li>
 </ul>
 </div>
