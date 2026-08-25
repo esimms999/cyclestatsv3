@@ -113,19 +113,46 @@ packages are skipped.</p>
 <pre><code><span><span class="va">inst</span><span class="op">/</span><span class="va">extdata</span><span class="op">/</span><span class="va">activities.rds</span></span></code></pre>
 <p>To obtain this file, run <code>data-raw/get_data.R</code>. It
 authenticates against the Ride with GPS API using your API key and auth
-token (set via the <code>RWGPS_API_KEY</code> and
-<code>RWGPS_AUTH_TOKEN</code> environment variables), paginates through
-all of your trips, and writes the processed result to
-<code>inst/extdata/activities.rds</code>.</p>
-<p>The script retains only cycling activities and converts distances
-from meters to miles automatically.</p>
+token, paginates through all of your trips, and writes the processed
+result to <code>inst/extdata/activities.rds</code>. The script retains
+only cycling activities and converts distances from meters to miles
+automatically.</p>
+<div class="section level3">
+<h3 id="set-up-your-api-credentials">Set up your API credentials<a class="anchor" aria-label="anchor" href="#set-up-your-api-credentials"></a>
+</h3>
+<p><code>data-raw/get_data.R</code> reads your Ride with GPS API key and
+auth token from the <code>RWGPS_API_KEY</code> and
+<code>RWGPS_AUTH_TOKEN</code> environment variables — it does not
+contain any credentials itself. Store these in a project-level
+<code>.Renviron</code> file, which is excluded from version control by
+<code>.gitignore</code> and must never be committed.</p>
+<p><strong>1. Open (or create) the project’s <code>.Renviron</code>
+file:</strong></p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu">edit_r_environ</span><span class="op">(</span><span class="st">"project"</span><span class="op">)</span></span></code></pre></div>
+<p><strong>2. Add your credentials, one per line, with no quotes and no
+spaces around <code>=</code>:</strong></p>
+<pre><code><span><span class="va">RWGPS_API_KEY</span><span class="op">=</span><span class="va">your</span><span class="op">-</span><span class="va">api</span><span class="op">-</span><span class="va">key</span><span class="op">-</span><span class="va">here</span></span>
+<span><span class="va">RWGPS_AUTH_TOKEN</span><span class="op">=</span><span class="va">your</span><span class="op">-</span><span class="va">auth</span><span class="op">-</span><span class="va">token</span><span class="op">-</span><span class="va">here</span></span></code></pre>
+<p><strong>3. Save the file, then restart R</strong> (Session → Restart
+R) so the new environment variables are loaded.</p>
+<p><strong>4. Verify they’re picked up:</strong></p>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html" class="external-link">Sys.getenv</a></span><span class="op">(</span><span class="st">"RWGPS_API_KEY"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html" class="external-link">Sys.getenv</a></span><span class="op">(</span><span class="st">"RWGPS_AUTH_TOKEN"</span><span class="op">)</span></span></code></pre></div>
+<p>You can find your API key and auth token in your <a href="https://ridewithgps.com/" class="external-link">Ride with GPS</a> account settings under
+API access. If <code>RWGPS_API_KEY</code> or
+<code>RWGPS_AUTH_TOKEN</code> are missing when
+<code>data-raw/get_data.R</code> runs, the script stops with an error
+rather than proceeding without credentials.</p>
+</div>
 </div>
 <div class="section level2">
 <h2 id="run-the-app">6. Run the App<a class="anchor" aria-label="anchor" href="#run-the-app"></a>
 </h2>
 <p>During development, load the package from source rather than the
 installed copy:</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">pkgload</span><span class="fu">::</span><span class="fu"><a href="https://pkgload.r-lib.org/reference/load_all.html" class="external-link">load_all</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/run_app.html">run_app</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p>Alternatively, open <code>app.R</code> and click the <strong>Run
@@ -159,7 +186,7 @@ App</strong> button in RStudio. This also calls
 <div class="section level3">
 <h3 id="documenting-and-checking">Documenting and checking<a class="anchor" aria-label="anchor" href="#documenting-and-checking"></a>
 </h3>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Regenerate documentation from roxygen2 comments</span></span>
 <span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">document</span><span class="op">(</span><span class="op">)</span></span>
 <span></span>
@@ -175,13 +202,13 @@ App</strong> button in RStudio. This also calls
 <div class="section level3">
 <h3 id="testing">Testing<a class="anchor" aria-label="anchor" href="#testing"></a>
 </h3>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">test</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="deploying">Deploying<a class="anchor" aria-label="anchor" href="#deploying"></a>
 </h3>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">rsconnect</span><span class="fu">::</span><span class="fu">deployApp</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 </div>
 </div>
@@ -211,30 +238,30 @@ before building — it is copied into the image at build time</li>
 </h3>
 <p>Run from the repository root (where the <code>Dockerfile</code>
 lives):</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="ex">docker</span> build <span class="at">-t</span> esimms999/cyclestatsv3:latest .</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="ex">docker</span> build <span class="at">-t</span> esimms999/cyclestatsv3:latest .</span></code></pre></div>
 <p>To tag a specific version alongside <code>latest</code>:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="ex">docker</span> build <span class="at">-t</span> esimms999/cyclestatsv3:latest <span class="at">-t</span> esimms999/cyclestatsv3:2.00 .</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="ex">docker</span> build <span class="at">-t</span> esimms999/cyclestatsv3:latest <span class="at">-t</span> esimms999/cyclestatsv3:2.00 .</span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="push-to-docker-hub">Push to Docker Hub<a class="anchor" aria-label="anchor" href="#push-to-docker-hub"></a>
 </h3>
 <p>Log in (only required once per session), then push:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="ex">docker</span> login</span>
-<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="ex">docker</span> push esimms999/cyclestatsv3:latest</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="ex">docker</span> login</span>
+<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a><span class="ex">docker</span> push esimms999/cyclestatsv3:latest</span></code></pre></div>
 <p>If you also tagged a version:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="ex">docker</span> push esimms999/cyclestatsv3:2.00</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="ex">docker</span> push esimms999/cyclestatsv3:2.00</span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="run-a-container">Run a container<a class="anchor" aria-label="anchor" href="#run-a-container"></a>
 </h3>
 <p>Pull and run from Docker Hub:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">--rm</span> <span class="at">-p</span> 3838:3838 esimms999/cyclestatsv3:latest</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">--rm</span> <span class="at">-p</span> 3838:3838 esimms999/cyclestatsv3:latest</span></code></pre></div>
 <p>Then open <a href="http://localhost:3838" class="external-link uri">http://localhost:3838</a> in a browser. The
 <code>--rm</code> flag removes the container automatically when it
 stops. To run it in the background instead:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-d</span> <span class="at">--name</span> cyclestatsv3 <span class="at">-p</span> 3838:3838 esimms999/cyclestatsv3:latest</span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-d</span> <span class="at">--name</span> cyclestatsv3 <span class="at">-p</span> 3838:3838 esimms999/cyclestatsv3:latest</span></code></pre></div>
 <p>Stop and remove the background container when done:</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="ex">docker</span> stop cyclestatsv3 <span class="kw">&amp;&amp;</span> <span class="ex">docker</span> rm cyclestatsv3</span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a><span class="ex">docker</span> stop cyclestatsv3 <span class="kw">&amp;&amp;</span> <span class="ex">docker</span> rm cyclestatsv3</span></code></pre></div>
 </div>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
