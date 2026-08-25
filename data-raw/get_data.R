@@ -12,7 +12,7 @@ library(stringr)
 # Set RWGPS_API_KEY and RWGPS_AUTH_TOKEN in a project-level .Renviron file
 # (run usethis::edit_r_environ("project"), then restart R). .Renviron is
 # gitignored and must never be committed.
-api_key    <- Sys.getenv("RWGPS_API_KEY")
+api_key <- Sys.getenv("RWGPS_API_KEY")
 auth_token <- Sys.getenv("RWGPS_AUTH_TOKEN")
 
 if (api_key == "" || auth_token == "") {
@@ -33,14 +33,14 @@ fetch_all_trips <- function(api_key, auth_token, page_size = 100) {
 
     resp <- request("https://ridewithgps.com/api/v1/trips.json") |>
       req_headers(
-        "x-rwgps-api-key"   = api_key,
+        "x-rwgps-api-key" = api_key,
         "x-rwgps-auth-token" = auth_token,
         "Accept" = "application/json"
       ) |>
       req_url_query(page = page, page_size = page_size) |>
       req_perform()
 
-    body  <- resp_body_json(resp)
+    body <- resp_body_json(resp)
     trips <- body$trips
 
     if (length(trips) == 0L) {
@@ -51,8 +51,10 @@ fetch_all_trips <- function(api_key, auth_token, page_size = 100) {
     all_trips <- c(all_trips, trips)
     meta <- body$meta$pagination
 
-    message("  Got ", length(trips), " trips | collected so far: ", length(all_trips),
-            " / ", meta$record_count)
+    message(
+      "  Got ", length(trips), " trips | collected so far: ", length(all_trips),
+      " / ", meta$record_count
+    )
 
     # Reliable stop conditions
     if (is.null(meta$next_page_url) || page >= meta$page_count) {
@@ -60,7 +62,7 @@ fetch_all_trips <- function(api_key, auth_token, page_size = 100) {
     }
 
     page <- page + 1
-    Sys.sleep(0.3)   # polite pause
+    Sys.sleep(0.3) # polite pause
   }
 
   message("Finished. Total trips retrieved: ", length(all_trips))
@@ -89,18 +91,18 @@ process_trips <- function(trips) {
       str_starts(activity_type, "cycling") | activity_type == "unknown:generic"
     ) |>
     mutate(
-      activity_id         = as.character(id),
-      activity_name       = name,
-      activity_datetime   = departed_at,
-      activity_date       = as_date(ymd_hms(departed_at, quiet = TRUE)),
-      activity_year       = format(activity_date, "%Y"),
-      activity_month      = format(activity_date, "%m"),
+      activity_id = as.character(id),
+      activity_name = name,
+      activity_datetime = departed_at,
+      activity_date = as_date(ymd_hms(departed_at, quiet = TRUE)),
+      activity_year = format(activity_date, "%Y"),
+      activity_month = format(activity_date, "%m"),
       activity_year_month = format(activity_date, "%Y-%m"),
-      activity_distance   = round(distance_m / 1609.344, 2),          # meters → miles
-      activity_avg_speed  = if_else(
+      activity_distance = round(distance_m / 1609.344, 2), # meters → miles
+      activity_avg_speed = if_else(
         is.na(avg_speed_kmh) | avg_speed_kmh == 0,
         round(activity_distance / (moving_time_s / 3600), 2),
-        round(avg_speed_kmh * 0.621371, 2)                           # km/h → mph
+        round(avg_speed_kmh * 0.621371, 2) # km/h → mph
       )
     ) |>
     select(
@@ -114,11 +116,10 @@ process_trips <- function(trips) {
 
 # ---------- main execution ----------
 message("Starting Ride with GPS download...")
-trips_raw  <- fetch_all_trips(api_key, auth_token)
+trips_raw <- fetch_all_trips(api_key, auth_token)
 activities <- process_trips(trips_raw)
 
 # Write the .rds file (this is what the package will use)
 saveRDS(activities, "inst/extdata/activities.rds")
 message("Wrote inst/extdata/activities.rds with ", nrow(activities), " cycling rides.")
 message("Date range: ", min(activities$activity_date), " to ", max(activities$activity_date))
-

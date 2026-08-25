@@ -65,27 +65,27 @@ To obtain this file, run `data-raw/get_data.R`. It authenticates against the Rid
 
 `data-raw/get_data.R` reads your Ride with GPS API key and auth token from the `RWGPS_API_KEY` and `RWGPS_AUTH_TOKEN` environment variables — it does not contain any credentials itself. Store these in a project-level `.Renviron` file, which is excluded from version control by `.gitignore` and must never be committed.
 
-1. Open (or create) the project's `.Renviron` file:
+**1. Open (or create) the project's `.Renviron` file:**
 
-   ```{r}
-   usethis::edit_r_environ("project")
-   ```
+```{r}
+usethis::edit_r_environ("project")
+```
 
-2. Add your credentials, one per line, with no quotes and no spaces around `=`:
+**2. Add your credentials, one per line, with no quotes and no spaces around `=`:**
 
-   ```
-   RWGPS_API_KEY=your-api-key-here
-   RWGPS_AUTH_TOKEN=your-auth-token-here
-   ```
+```
+RWGPS_API_KEY=your-api-key-here
+RWGPS_AUTH_TOKEN=your-auth-token-here
+```
 
-3. Save the file, then **restart R** (Session → Restart R) so the new environment variables are loaded.
+**3. Save the file, then restart R** (Session → Restart R) so the new environment variables are loaded.
 
-4. Verify they're picked up:
+**4. Verify they're picked up:**
 
-   ```{r}
-   Sys.getenv("RWGPS_API_KEY")
-   Sys.getenv("RWGPS_AUTH_TOKEN")
-   ```
+```{r}
+Sys.getenv("RWGPS_API_KEY")
+Sys.getenv("RWGPS_AUTH_TOKEN")
+```
 
 You can find your API key and auth token in your [Ride with GPS](https://ridewithgps.com/) account settings under API access. If `RWGPS_API_KEY` or `RWGPS_AUTH_TOKEN` are missing when `data-raw/get_data.R` runs, the script stops with an error rather than proceeding without credentials.
 
