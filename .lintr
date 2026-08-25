@@ -3,6 +3,7 @@ linters: linters_with_defaults(
     object_name_linter(styles = c("snake_case", "SCREAMING_SNAKE_CASE"))
   )
 exclusions: list(
-    "app.R"
+    "app.R",
+    "data-raw/get_data.R"
   )
 encoding: "UTF-8"

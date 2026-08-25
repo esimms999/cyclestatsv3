@@ -13,5 +13,5 @@
 .positai
 docs
 
-# Data pull scripts (may contain API keys/tokens)
-data-raw/*.R
+# Local secrets (API keys, tokens) - never commit
+.Renviron
