@@ -22,9 +22,13 @@ Imports:
     shiny,
     shinyjs
 Suggests:
+    httr2,
     knitr,
     lintr,
+    lubridate,
+    purrr,
     rmarkdown,
+    stringr,
     styler,
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
