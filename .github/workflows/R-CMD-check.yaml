@@ -25,21 +25,10 @@ jobs:
         with:
           use-public-rspm: true
 
-      - name: Install pak
-        run: |
-          install.packages("pak", repos = sprintf(
-            "https://r-lib.github.io/p/pak/stable/%s/%s/%s",
-            .Platform$pkgType, R.Version()$os, R.Version()$arch
-          ))
-        shell: Rscript {0}
-
-      - name: Install pinned dependencies from pkg.lock
-        run: pak::lockfile_install("pkg.lock")
-        shell: Rscript {0}
-
-      - name: Install check dependencies
-        run: pak::pkg_install(c("rcmdcheck", "sessioninfo", "knitr", "rmarkdown"))
-        shell: Rscript {0}
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: any::rcmdcheck, any::sessioninfo
+          needs: check
 
       - uses: r-lib/actions/check-r-package@v2
         with:
