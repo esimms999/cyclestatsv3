@@ -24,7 +24,7 @@ jobs:
           use-public-rspm: true
 
       - name: Install pak
-        run: install.packages("pak")
+        run: install.packages("pak", repos = "https://cloud.r-project.org")
         shell: Rscript {0}
 
       - name: Refresh pkg.lock
