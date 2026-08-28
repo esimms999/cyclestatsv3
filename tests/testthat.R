@@ -1,3 +1,3 @@
 library(testthat)
 
-test_check("cyclestats")
+test_check("cyclestatsv3")
