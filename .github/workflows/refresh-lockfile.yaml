@@ -1,0 +1,44 @@
+# Periodically refreshes pkg.lock to current CRAN versions and opens a PR
+# so the update can be reviewed before merging into main.
+on:
+  schedule:
+    - cron: "0 6 * * 1" # every Monday at 06:00 UTC
+  workflow_dispatch:
+
+name: refresh-lockfile.yaml
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh-lockfile:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install pak
+        run: install.packages("pak")
+        shell: Rscript {0}
+
+      - name: Refresh pkg.lock
+        run: pak::lockfile_create(".", lockfile = "pkg.lock")
+        shell: Rscript {0}
+
+      - name: Open pull request with any changes
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "Refresh pkg.lock"
+          title: "Refresh pkg.lock"
+          body: >
+            Automated update of `pkg.lock` via `pak::lockfile_create()`.
+            Review the diff for any dependency version bumps before merging.
+          branch: refresh-pkg-lock
+          delete-branch: true
+          add-paths: pkg.lock
