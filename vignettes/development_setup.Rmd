@@ -53,11 +53,7 @@ devtools::install()
 
 ## 5. Add the Data File
 
-The app reads from a pre-downloaded [Ride with GPS](https://ridewithgps.com/) export. Place your `activities.rds` at:
-
-```
-inst/extdata/activities.rds
-```
+The app reads from a pre-downloaded [Ride with GPS](https://ridewithgps.com/) export. 
 
 To obtain this file, run `data-raw/get_data.R`. It authenticates against the Ride with GPS API using your API key and auth token, paginates through all of your trips, and writes the processed result to `inst/extdata/activities.rds`. The script retains only cycling activities and converts distances from meters to miles automatically.
 
