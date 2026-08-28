@@ -32,7 +32,7 @@ jobs:
         shell: Rscript {0}
 
       - name: Refresh pkg.lock
-        run: pak::lockfile_create(".", lockfile = "pkg.lock")
+        run: pak::lockfile_create("deps::.", lockfile = "pkg.lock")
         shell: Rscript {0}
 
       - name: Open pull request with any changes

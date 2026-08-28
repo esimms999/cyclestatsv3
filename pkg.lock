@@ -1,14 +1,14 @@
 {
   "lockfile_version": 1,
-  "os": "Windows 11 x64 (build 26200)",
-  "r_version": "R version 4.6.0 (2026-04-24 ucrt)",
-  "platform": "x86_64-w64-mingw32",
+  "os": "Ubuntu 24.04.4 LTS",
+  "r_version": "R version 4.6.1 (2026-06-24)",
+  "platform": "x86_64-pc-linux-gnu",
   "packages": [
     {
-      "ref": "local::.",
-      "package": "cyclestats",
+      "ref": "deps::.",
+      "package": "cyclestats-deps",
       "version": "3.00",
-      "type": "local",
+      "type": "deps",
       "direct": true,
       "binary": false,
       "dependencies": ["bsicons", "bslib", "dplyr", "DT", "ggplot2", "golem", "markdown", "plotly", "shiny", "shinyjs"],
@@ -156,22 +156,23 @@
       ],
       "vignettes": false,
       "metadata": {
-        "RemotePkgRef": "local::.",
-        "RemoteType": "local"
+        "RemotePkgRef": "deps::.",
+        "RemoteType": "deps"
       },
-      "sources": ["file://C:\\Users\\Eric\\Documents\\R_Projects\\cyclestatsv3"],
-      "target": "src/contrib/cyclestats_3.00.tar.gz",
+      "sources": [],
+      "target": "src/contrib/cyclestats-deps_3.00.tar.gz",
       "platform": "source",
       "rversion": "*",
       "directpkg": true,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
-      "install_args": ["--no-multiarch"],
-      "sysreqs": ""
+      "install_args": [],
+      "sysreqs": "",
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/askpass",
+      "ref": "installed::/usr/local/lib/R/site-library/askpass",
       "package": "askpass",
       "version": "1.2.1",
       "type": "installed",
@@ -191,24 +192,24 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/askpass",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/askpass",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "1.2.1"
       },
       "sources": [],
       "target": "src/contrib/askpass_1.2.1.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 09:23:48 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:25:18 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/attempt",
+      "ref": "installed::/usr/local/lib/R/site-library/attempt",
       "package": "attempt",
       "version": "0.3.1",
       "type": "installed",
@@ -228,7 +229,7 @@
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/attempt",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/attempt",
         "RemotePkgPlatform": "*",
         "RemoteSha": "0.3.1"
       },
@@ -236,16 +237,16 @@
       "target": "src/contrib/attempt_0.3.1.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 08:32:54 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 02:20:47 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/base64enc",
+      "ref": "installed::/usr/local/lib/R/site-library/base64enc",
       "package": "base64enc",
       "version": "0.1-6",
       "type": "installed",
@@ -265,24 +266,24 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/base64enc",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/base64enc",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "0.1-6"
       },
       "sources": [],
       "target": "src/contrib/base64enc_0.1-6.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-04-21 00:40:54 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 02:05:52 UTC; unix",
       "directpkg": false,
       "license": "GPL-2 | GPL-3",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/bsicons",
+      "ref": "installed::/usr/local/lib/R/site-library/bsicons",
       "package": "bsicons",
       "version": "0.1.2",
       "type": "installed",
@@ -290,6 +291,13 @@
       "binary": true,
       "dependencies": ["cli", "htmltools", "rlang"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "2.10"
+        },
         {
           "ref": "cli",
           "type": "imports",
@@ -317,20 +325,13 @@
           "package": "utils",
           "op": "",
           "version": ""
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "2.10"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/bsicons",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/bsicons",
         "RemotePkgPlatform": "*",
         "RemoteSha": "0.1.2"
       },
@@ -338,16 +339,16 @@
       "target": "src/contrib/bsicons_0.1.2.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 09:24:39 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 21:37:02 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/bslib",
+      "ref": "installed::/usr/local/lib/R/site-library/bslib",
       "package": "bslib",
       "version": "0.12.0",
       "type": "installed",
@@ -355,6 +356,13 @@
       "binary": true,
       "dependencies": ["base64enc", "cachem", "fastmap", "htmltools", "jquerylib", "jsonlite", "lifecycle", "memoise", "mime", "rlang", "sass"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "2.10"
+        },
         {
           "ref": "base64enc",
           "type": "imports",
@@ -438,37 +446,30 @@
           "package": "sass",
           "op": ">=",
           "version": "0.4.9"
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "2.10"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/bslib",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/bslib",
         "RemotePkgPlatform": "*",
         "RemoteSha": "0.12.0"
       },
       "sources": [],
       "target": "src/contrib/bslib_0.12.0.tar.gz",
       "platform": "*",
-      "rversion": "R 4.6.1",
-      "built": "R 4.6.1; ; 2026-08-23 02:29:54 UTC; windows",
+      "rversion": "R 4.6.0",
+      "built": "R 4.6.0; ; 2026-08-04 05:05:31 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/cachem",
+      "ref": "installed::/usr/local/lib/R/site-library/cachem",
       "package": "cachem",
       "version": "1.1.0",
       "type": "installed",
@@ -495,24 +496,24 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/cachem",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/cachem",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "1.1.0"
       },
       "sources": [],
       "target": "src/contrib/cachem_1.1.0.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 09:23:48 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:49:23 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/cli",
+      "ref": "installed::/usr/local/lib/R/site-library/cli",
       "package": "cli",
       "version": "3.6.6",
       "type": "installed",
@@ -521,42 +522,42 @@
       "dependencies": [],
       "deps": [
         {
-          "ref": "utils",
-          "type": "imports",
-          "package": "utils",
-          "op": "",
-          "version": ""
-        },
-        {
           "ref": "R",
           "type": "depends",
           "package": "R",
           "op": ">=",
           "version": "3.4"
+        },
+        {
+          "ref": "utils",
+          "type": "imports",
+          "package": "utils",
+          "op": "",
+          "version": ""
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/cli",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/cli",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "3.6.6"
       },
       "sources": [],
       "target": "src/contrib/cli_3.6.6.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 08:30:09 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:56:15 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/commonmark",
+      "ref": "installed::/usr/local/lib/R/site-library/commonmark",
       "package": "commonmark",
       "version": "2.0.0",
       "type": "installed",
@@ -568,24 +569,24 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/commonmark",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/commonmark",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "2.0.0"
       },
       "sources": [],
       "target": "src/contrib/commonmark_2.0.0.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 08:30:12 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:23:17 UTC; unix",
       "directpkg": false,
       "license": "BSD_2_clause + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/config",
+      "ref": "installed::/usr/local/lib/R/site-library/config",
       "package": "config",
       "version": "0.3.2",
       "type": "installed",
@@ -605,7 +606,7 @@
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/config",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/config",
         "RemotePkgPlatform": "*",
         "RemoteSha": "0.3.2"
       },
@@ -613,16 +614,16 @@
       "target": "src/contrib/config_0.3.2.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 08:32:54 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 01:54:14 UTC; unix",
       "directpkg": false,
       "license": "GPL-3",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/crosstalk",
+      "ref": "installed::/usr/local/lib/R/site-library/crosstalk",
       "package": "crosstalk",
       "version": "1.2.2",
       "type": "installed",
@@ -663,7 +664,7 @@
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/crosstalk",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/crosstalk",
         "RemotePkgPlatform": "*",
         "RemoteSha": "1.2.2"
       },
@@ -671,18 +672,18 @@
       "target": "src/contrib/crosstalk_1.2.2.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 09:41:26 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 02:47:11 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/curl",
+      "ref": "installed::/usr/local/lib/R/site-library/curl",
       "package": "curl",
-      "version": "8.0.0",
+      "version": "7.1.0",
       "type": "installed",
       "direct": false,
       "binary": true,
@@ -700,69 +701,82 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/curl",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
-        "RemoteSha": "8.0.0"
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/curl",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
+        "RemoteSha": "7.1.0"
       },
       "sources": [],
-      "target": "src/contrib/curl_8.0.0.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "target": "src/contrib/curl_7.1.0.tar.gz",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-08-28 08:55:29 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:32:50 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran",
-      "sysreqs": "libcurl (>= 7.73): libcurl-devel (rpm) or\n        libcurl4-openssl-dev (deb)"
+      "sysreqs": "libcurl (>= 7.73): libcurl-devel (rpm) or\n        libcurl4-openssl-dev (deb)",
+      "sysreqs_packages": [
+        {
+          "sysreq": "libcurl",
+          "packages": ["libcurl4-openssl-dev"],
+          "pre_install": {},
+          "post_install": {}
+        },
+        {
+          "sysreq": "openssl",
+          "packages": ["libssl-dev"],
+          "pre_install": {},
+          "post_install": {}
+        }
+      ]
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/data.table",
+      "ref": "installed::/usr/local/lib/R/site-library/data.table",
       "package": "data.table",
-      "version": "1.18.6.1",
+      "version": "1.18.4",
       "type": "installed",
       "direct": false,
       "binary": true,
       "dependencies": [],
       "deps": [
         {
-          "ref": "methods",
-          "type": "imports",
-          "package": "methods",
-          "op": "",
-          "version": ""
-        },
-        {
           "ref": "R",
           "type": "depends",
           "package": "R",
           "op": ">=",
           "version": "3.4.0"
+        },
+        {
+          "ref": "methods",
+          "type": "imports",
+          "package": "methods",
+          "op": "",
+          "version": ""
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/data.table",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
-        "RemoteSha": "1.18.6.1"
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/data.table",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
+        "RemoteSha": "1.18.4"
       },
       "sources": [],
-      "target": "src/contrib/data.table_1.18.6.1.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "target": "src/contrib/data.table_1.18.4.tar.gz",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-08-28 08:55:56 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-05-07 06:44:34 UTC; unix",
       "directpkg": false,
       "license": "MPL-2.0 | file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/digest",
+      "ref": "installed::/usr/local/lib/R/site-library/digest",
       "package": "digest",
       "version": "0.6.39",
       "type": "installed",
@@ -771,42 +785,42 @@
       "dependencies": [],
       "deps": [
         {
-          "ref": "utils",
-          "type": "imports",
-          "package": "utils",
-          "op": "",
-          "version": ""
-        },
-        {
           "ref": "R",
           "type": "depends",
           "package": "R",
           "op": ">=",
           "version": "3.3.0"
+        },
+        {
+          "ref": "utils",
+          "type": "imports",
+          "package": "utils",
+          "op": "",
+          "version": ""
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/digest",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/digest",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "0.6.39"
       },
       "sources": [],
       "target": "src/contrib/digest_0.6.39.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 08:30:10 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:12:08 UTC; unix",
       "directpkg": false,
       "license": "GPL (>= 2)",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/dplyr",
+      "ref": "installed::/usr/local/lib/R/site-library/dplyr",
       "package": "dplyr",
       "version": "1.2.1",
       "type": "installed",
@@ -814,6 +828,13 @@
       "binary": true,
       "dependencies": ["cli", "generics", "glue", "lifecycle", "magrittr", "pillar", "R6", "rlang", "tibble", "tidyselect", "vctrs"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "4.1.0"
+        },
         {
           "ref": "cli",
           "type": "imports",
@@ -904,37 +925,30 @@
           "package": "vctrs",
           "op": ">=",
           "version": "0.7.1"
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "4.1.0"
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/dplyr",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/dplyr",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "1.2.1"
       },
       "sources": [],
       "target": "src/contrib/dplyr_1.2.1.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 10:41:57 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 02:59:58 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/DT",
+      "ref": "installed::/usr/local/lib/R/site-library/DT",
       "package": "DT",
       "version": "0.34.0",
       "type": "installed",
@@ -996,7 +1010,7 @@
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/DT",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/DT",
         "RemotePkgPlatform": "*",
         "RemoteSha": "0.34.0"
       },
@@ -1004,16 +1018,16 @@
       "target": "src/contrib/DT_0.34.0.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 10:42:06 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 03:44:46 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/evaluate",
+      "ref": "installed::/usr/local/lib/R/site-library/evaluate",
       "package": "evaluate",
       "version": "1.0.5",
       "type": "installed",
@@ -1033,7 +1047,7 @@
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/evaluate",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/evaluate",
         "RemotePkgPlatform": "*",
         "RemoteSha": "1.0.5"
       },
@@ -1041,16 +1055,16 @@
       "target": "src/contrib/evaluate_1.0.5.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 08:30:13 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 01:39:41 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/farver",
+      "ref": "installed::/usr/local/lib/R/site-library/farver",
       "package": "farver",
       "version": "2.1.2",
       "type": "installed",
@@ -1062,24 +1076,24 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/farver",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/farver",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "2.1.2"
       },
       "sources": [],
       "target": "src/contrib/farver_2.1.2.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 08:30:11 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:18:01 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/fastmap",
+      "ref": "installed::/usr/local/lib/R/site-library/fastmap",
       "package": "fastmap",
       "version": "1.2.0",
       "type": "installed",
@@ -1091,24 +1105,24 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/fastmap",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/fastmap",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "1.2.0"
       },
       "sources": [],
       "target": "src/contrib/fastmap_1.2.0.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 08:30:13 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:49:13 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/fontawesome",
+      "ref": "installed::/usr/local/lib/R/site-library/fontawesome",
       "package": "fontawesome",
       "version": "0.5.3",
       "type": "installed",
@@ -1116,6 +1130,13 @@
       "binary": true,
       "dependencies": ["rlang", "htmltools"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "3.3.0"
+        },
         {
           "ref": "rlang",
           "type": "imports",
@@ -1129,20 +1150,13 @@
           "package": "htmltools",
           "op": ">=",
           "version": "0.5.1.1"
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "3.3.0"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/fontawesome",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/fontawesome",
         "RemotePkgPlatform": "*",
         "RemoteSha": "0.5.3"
       },
@@ -1150,16 +1164,16 @@
       "target": "src/contrib/fontawesome_0.5.3.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 09:41:09 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 02:45:51 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/fs",
+      "ref": "installed::/usr/local/lib/R/site-library/fs",
       "package": "fs",
       "version": "2.1.0",
       "type": "installed",
@@ -1168,43 +1182,62 @@
       "dependencies": [],
       "deps": [
         {
-          "ref": "methods",
-          "type": "imports",
-          "package": "methods",
-          "op": "",
-          "version": ""
-        },
-        {
           "ref": "R",
           "type": "depends",
           "package": "R",
           "op": ">=",
           "version": "4.1"
+        },
+        {
+          "ref": "methods",
+          "type": "imports",
+          "package": "methods",
+          "op": "",
+          "version": ""
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/fs",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/fs",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "2.1.0"
       },
       "sources": [],
       "target": "src/contrib/fs_2.1.0.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 08:30:11 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:13:01 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran",
-      "sysreqs": "libuv: libuv-devel (rpm) or libuv1-dev (deb).\n        Alternatively to build the vendored libuv 'cmake' is required.\n        GNU make."
+      "sysreqs": "libuv: libuv-devel (rpm) or libuv1-dev (deb).\n        Alternatively to build the vendored libuv 'cmake' is required.\n        GNU make.",
+      "sysreqs_packages": [
+        {
+          "sysreq": "cmake",
+          "packages": ["cmake"],
+          "pre_install": {},
+          "post_install": {}
+        },
+        {
+          "sysreq": "gnumake",
+          "packages": ["make"],
+          "pre_install": {},
+          "post_install": {}
+        },
+        {
+          "sysreq": "libuv",
+          "packages": ["libuv1-dev"],
+          "pre_install": {},
+          "post_install": {}
+        }
+      ]
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/generics",
+      "ref": "installed::/usr/local/lib/R/site-library/generics",
       "package": "generics",
       "version": "0.1.4",
       "type": "installed",
@@ -1213,25 +1246,25 @@
       "dependencies": [],
       "deps": [
         {
-          "ref": "methods",
-          "type": "imports",
-          "package": "methods",
-          "op": "",
-          "version": ""
-        },
-        {
           "ref": "R",
           "type": "depends",
           "package": "R",
           "op": ">=",
           "version": "3.6"
+        },
+        {
+          "ref": "methods",
+          "type": "imports",
+          "package": "methods",
+          "op": "",
+          "version": ""
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/generics",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/generics",
         "RemotePkgPlatform": "*",
         "RemoteSha": "0.1.4"
       },
@@ -1239,16 +1272,16 @@
       "target": "src/contrib/generics_0.1.4.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 08:30:13 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 01:24:54 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/ggplot2",
+      "ref": "installed::/usr/local/lib/R/site-library/ggplot2",
       "package": "ggplot2",
       "version": "4.0.3",
       "type": "installed",
@@ -1256,6 +1289,13 @@
       "binary": true,
       "dependencies": ["cli", "gtable", "isoband", "lifecycle", "rlang", "S7", "scales", "vctrs", "withr"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "4.1"
+        },
         {
           "ref": "cli",
           "type": "imports",
@@ -1339,20 +1379,13 @@
           "package": "withr",
           "op": ">=",
           "version": "2.5.0"
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "4.1"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/ggplot2",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/ggplot2",
         "RemotePkgPlatform": "*",
         "RemoteSha": "4.0.3"
       },
@@ -1360,16 +1393,16 @@
       "target": "src/contrib/ggplot2_4.0.3.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 10:04:22 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 02:57:17 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/glue",
+      "ref": "installed::/usr/local/lib/R/site-library/glue",
       "package": "glue",
       "version": "1.8.1",
       "type": "installed",
@@ -1378,42 +1411,42 @@
       "dependencies": [],
       "deps": [
         {
-          "ref": "methods",
-          "type": "imports",
-          "package": "methods",
-          "op": "",
-          "version": ""
-        },
-        {
           "ref": "R",
           "type": "depends",
           "package": "R",
           "op": ">=",
           "version": "4.1"
+        },
+        {
+          "ref": "methods",
+          "type": "imports",
+          "package": "methods",
+          "op": "",
+          "version": ""
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/glue",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/glue",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "1.8.1"
       },
       "sources": [],
       "target": "src/contrib/glue_1.8.1.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 08:30:09 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:12:31 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/golem",
+      "ref": "installed::/usr/local/lib/R/site-library/golem",
       "package": "golem",
       "version": "1.0.1",
       "type": "installed",
@@ -1421,6 +1454,13 @@
       "binary": true,
       "dependencies": ["attempt", "codetools", "config", "htmltools", "rlang", "shiny", "yaml"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "3.5.0"
+        },
         {
           "ref": "attempt",
           "type": "imports",
@@ -1476,37 +1516,30 @@
           "package": "yaml",
           "op": "",
           "version": ""
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "3.5.0"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/golem",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/golem",
         "RemotePkgPlatform": "*",
         "RemoteSha": "1.0.1"
       },
       "sources": [],
       "target": "src/contrib/golem_1.0.1.tar.gz",
       "platform": "*",
-      "rversion": "R 4.6.1",
-      "built": "R 4.6.1; ; 2026-08-23 03:08:58 UTC; windows",
+      "rversion": "R 4.6.0",
+      "built": "R 4.6.0; ; 2026-07-08 05:14:33 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/gtable",
+      "ref": "installed::/usr/local/lib/R/site-library/gtable",
       "package": "gtable",
       "version": "0.3.6",
       "type": "installed",
@@ -1514,6 +1547,13 @@
       "binary": true,
       "dependencies": ["cli", "glue", "lifecycle", "rlang"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "4.0"
+        },
         {
           "ref": "cli",
           "type": "imports",
@@ -1555,20 +1595,13 @@
           "package": "stats",
           "op": "",
           "version": ""
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "4.0"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/gtable",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/gtable",
         "RemotePkgPlatform": "*",
         "RemoteSha": "0.3.6"
       },
@@ -1576,16 +1609,16 @@
       "target": "src/contrib/gtable_0.3.6.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 09:41:06 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 01:59:24 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/highr",
+      "ref": "installed::/usr/local/lib/R/site-library/highr",
       "package": "highr",
       "version": "0.12",
       "type": "installed",
@@ -1594,25 +1627,25 @@
       "dependencies": ["xfun"],
       "deps": [
         {
-          "ref": "xfun",
-          "type": "imports",
-          "package": "xfun",
-          "op": ">=",
-          "version": "0.18"
-        },
-        {
           "ref": "R",
           "type": "depends",
           "package": "R",
           "op": ">=",
           "version": "3.3.0"
+        },
+        {
+          "ref": "xfun",
+          "type": "imports",
+          "package": "xfun",
+          "op": ">=",
+          "version": "0.18"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/highr",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/highr",
         "RemotePkgPlatform": "*",
         "RemoteSha": "0.12"
       },
@@ -1620,16 +1653,16 @@
       "target": "src/contrib/highr_0.12.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 09:23:46 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 03:25:28 UTC; unix",
       "directpkg": false,
       "license": "GPL",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/htmltools",
+      "ref": "installed::/usr/local/lib/R/site-library/htmltools",
       "package": "htmltools",
       "version": "0.5.9",
       "type": "installed",
@@ -1637,6 +1670,13 @@
       "binary": true,
       "dependencies": ["base64enc", "digest", "fastmap", "rlang"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "2.14.1"
+        },
         {
           "ref": "base64enc",
           "type": "imports",
@@ -1678,37 +1718,30 @@
           "package": "utils",
           "op": "",
           "version": ""
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "2.14.1"
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/htmltools",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/htmltools",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "0.5.9"
       },
       "sources": [],
       "target": "src/contrib/htmltools_0.5.9.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 09:23:46 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 02:41:28 UTC; unix",
       "directpkg": false,
       "license": "GPL (>= 2)",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/htmlwidgets",
+      "ref": "installed::/usr/local/lib/R/site-library/htmlwidgets",
       "package": "htmlwidgets",
       "version": "1.6.4",
       "type": "installed",
@@ -1763,7 +1796,7 @@
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/htmlwidgets",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/htmlwidgets",
         "RemotePkgPlatform": "*",
         "RemoteSha": "1.6.4"
       },
@@ -1771,16 +1804,16 @@
       "target": "src/contrib/htmlwidgets_1.6.4.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 10:41:58 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 03:40:28 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/httpuv",
+      "ref": "installed::/usr/local/lib/R/site-library/httpuv",
       "package": "httpuv",
       "version": "1.6.17",
       "type": "installed",
@@ -1788,6 +1821,13 @@
       "binary": true,
       "dependencies": ["later", "promises", "R6", "Rcpp"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "2.15.1"
+        },
         {
           "ref": "later",
           "type": "imports",
@@ -1822,38 +1862,44 @@
           "package": "utils",
           "op": "",
           "version": ""
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "2.15.1"
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/httpuv",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/httpuv",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "1.6.17"
       },
       "sources": [],
       "target": "src/contrib/httpuv_1.6.17.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 10:04:23 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-07-06 13:09:04 UTC; unix",
       "directpkg": false,
       "license": "GPL (>= 2) | file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran",
-      "sysreqs": "GNU make, zlib"
+      "sysreqs": "GNU make, zlib",
+      "sysreqs_packages": [
+        {
+          "sysreq": "gnumake",
+          "packages": ["make"],
+          "pre_install": {},
+          "post_install": {}
+        },
+        {
+          "sysreq": "zlib",
+          "packages": ["zlib1g-dev"],
+          "pre_install": {},
+          "post_install": {}
+        }
+      ]
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/httr",
+      "ref": "installed::/usr/local/lib/R/site-library/httr",
       "package": "httr",
       "version": "1.4.8",
       "type": "installed",
@@ -1861,6 +1907,13 @@
       "binary": true,
       "dependencies": ["curl", "jsonlite", "mime", "openssl", "R6"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "3.6"
+        },
         {
           "ref": "curl",
           "type": "imports",
@@ -1895,20 +1948,13 @@
           "package": "R6",
           "op": "",
           "version": ""
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "3.6"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/httr",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/httr",
         "RemotePkgPlatform": "*",
         "RemoteSha": "1.4.8"
       },
@@ -1916,16 +1962,16 @@
       "target": "src/contrib/httr_1.4.8.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 10:04:25 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 01:37:52 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/isoband",
+      "ref": "installed::/usr/local/lib/R/site-library/isoband",
       "package": "isoband",
       "version": "0.3.0",
       "type": "installed",
@@ -1966,24 +2012,24 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/isoband",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/isoband",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "0.3.0"
       },
       "sources": [],
       "target": "src/contrib/isoband_0.3.0.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 09:23:46 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-05-07 06:45:56 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/jquerylib",
+      "ref": "installed::/usr/local/lib/R/site-library/jquerylib",
       "package": "jquerylib",
       "version": "0.1.4",
       "type": "installed",
@@ -2003,7 +2049,7 @@
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/jquerylib",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/jquerylib",
         "RemotePkgPlatform": "*",
         "RemoteSha": "0.1.4"
       },
@@ -2011,16 +2057,16 @@
       "target": "src/contrib/jquerylib_0.1.4.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 09:41:09 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 02:45:26 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/jsonlite",
+      "ref": "installed::/usr/local/lib/R/site-library/jsonlite",
       "package": "jsonlite",
       "version": "2.0.0",
       "type": "installed",
@@ -2040,24 +2086,24 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/jsonlite",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/jsonlite",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "2.0.0"
       },
       "sources": [],
       "target": "src/contrib/jsonlite_2.0.0.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 08:30:09 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:24:54 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/knitr",
+      "ref": "installed::/usr/local/lib/R/site-library/knitr",
       "package": "knitr",
       "version": "1.51",
       "type": "installed",
@@ -2065,6 +2111,13 @@
       "binary": true,
       "dependencies": ["evaluate", "highr", "xfun", "yaml"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "3.6.0"
+        },
         {
           "ref": "evaluate",
           "type": "imports",
@@ -2106,20 +2159,13 @@
           "package": "yaml",
           "op": ">=",
           "version": "2.1.19"
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "3.6.0"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/knitr",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/knitr",
         "RemotePkgPlatform": "*",
         "RemoteSha": "1.51"
       },
@@ -2127,17 +2173,24 @@
       "target": "src/contrib/knitr_1.51.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 09:41:12 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 03:26:17 UTC; unix",
       "directpkg": false,
       "license": "GPL",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran",
-      "sysreqs": "Package vignettes based on R Markdown v2 or\n        reStructuredText require Pandoc (http://pandoc.org). The\n        function rst2pdf() requires rst2pdf\n        (https://github.com/rst2pdf/rst2pdf)."
+      "sysreqs": "Package vignettes based on R Markdown v2 or\n        reStructuredText require Pandoc (http://pandoc.org). The\n        function rst2pdf() requires rst2pdf\n        (https://github.com/rst2pdf/rst2pdf).",
+      "sysreqs_packages": [
+        {
+          "sysreq": "pandoc",
+          "packages": ["pandoc"],
+          "pre_install": {},
+          "post_install": {}
+        }
+      ]
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/labeling",
+      "ref": "installed::/usr/local/lib/R/site-library/labeling",
       "package": "labeling",
       "version": "0.4.3",
       "type": "installed",
@@ -2164,7 +2217,7 @@
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/labeling",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/labeling",
         "RemotePkgPlatform": "*",
         "RemoteSha": "0.4.3"
       },
@@ -2172,16 +2225,16 @@
       "target": "src/contrib/labeling_0.4.3.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-04-21 00:40:53 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 01:27:24 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE | Unlimited",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/later",
+      "ref": "installed::/usr/local/lib/R/site-library/later",
       "package": "later",
       "version": "1.4.8",
       "type": "installed",
@@ -2189,6 +2242,13 @@
       "binary": true,
       "dependencies": ["Rcpp", "rlang"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "3.5"
+        },
         {
           "ref": "Rcpp",
           "type": "imports",
@@ -2202,37 +2262,30 @@
           "package": "rlang",
           "op": "",
           "version": ""
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "3.5"
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/later",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/later",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "1.4.8"
       },
       "sources": [],
       "target": "src/contrib/later_1.4.8.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 09:23:46 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-07-06 12:58:54 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/lazyeval",
+      "ref": "installed::/usr/local/lib/R/site-library/lazyeval",
       "package": "lazyeval",
       "version": "0.2.3",
       "type": "installed",
@@ -2241,42 +2294,42 @@
       "dependencies": ["rlang"],
       "deps": [
         {
-          "ref": "rlang",
-          "type": "imports",
-          "package": "rlang",
-          "op": "",
-          "version": ""
-        },
-        {
           "ref": "R",
           "type": "depends",
           "package": "R",
           "op": ">=",
           "version": "3.1.0"
+        },
+        {
+          "ref": "rlang",
+          "type": "imports",
+          "package": "rlang",
+          "op": "",
+          "version": ""
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/lazyeval",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/lazyeval",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "0.2.3"
       },
       "sources": [],
       "target": "src/contrib/lazyeval_0.2.3.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 09:23:47 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 02:20:56 UTC; unix",
       "directpkg": false,
       "license": "GPL-3",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/lifecycle",
+      "ref": "installed::/usr/local/lib/R/site-library/lifecycle",
       "package": "lifecycle",
       "version": "1.0.5",
       "type": "installed",
@@ -2284,6 +2337,13 @@
       "binary": true,
       "dependencies": ["cli", "rlang"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "3.6"
+        },
         {
           "ref": "cli",
           "type": "imports",
@@ -2297,20 +2357,13 @@
           "package": "rlang",
           "op": ">=",
           "version": "1.1.0"
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "3.6"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/lifecycle",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/lifecycle",
         "RemotePkgPlatform": "*",
         "RemoteSha": "1.0.5"
       },
@@ -2318,23 +2371,30 @@
       "target": "src/contrib/lifecycle_1.0.5.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 09:23:46 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 01:58:39 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/litedown",
+      "ref": "installed::/usr/local/lib/R/site-library/litedown",
       "package": "litedown",
-      "version": "0.11",
+      "version": "0.10",
       "type": "installed",
       "direct": false,
       "binary": true,
       "dependencies": ["commonmark", "xfun"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "3.2.0"
+        },
         {
           "ref": "utils",
           "type": "imports",
@@ -2355,37 +2415,30 @@
           "package": "xfun",
           "op": ">=",
           "version": "0.55"
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "3.2.0"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/litedown",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/litedown",
         "RemotePkgPlatform": "*",
-        "RemoteSha": "0.11"
+        "RemoteSha": "0.10"
       },
       "sources": [],
-      "target": "src/contrib/litedown_0.11.tar.gz",
+      "target": "src/contrib/litedown_0.10.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-08-28 08:56:21 UTC; windows",
+      "built": "R 4.6.0; ; 2026-07-12 04:50:37 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/magrittr",
+      "ref": "installed::/usr/local/lib/R/site-library/magrittr",
       "package": "magrittr",
       "version": "2.0.5",
       "type": "installed",
@@ -2405,24 +2458,24 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/magrittr",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/magrittr",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "2.0.5"
       },
       "sources": [],
       "target": "src/contrib/magrittr_2.0.5.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 08:30:10 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:39:46 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/markdown",
+      "ref": "installed::/usr/local/lib/R/site-library/markdown",
       "package": "markdown",
       "version": "2.0",
       "type": "installed",
@@ -2430,6 +2483,13 @@
       "binary": true,
       "dependencies": ["xfun", "litedown"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "2.11.1"
+        },
         {
           "ref": "utils",
           "type": "imports",
@@ -2450,20 +2510,13 @@
           "package": "litedown",
           "op": ">=",
           "version": "0.6"
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "2.11.1"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/markdown",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/markdown",
         "RemotePkgPlatform": "*",
         "RemoteSha": "2.0"
       },
@@ -2471,16 +2524,16 @@
       "target": "src/contrib/markdown_2.0.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 09:23:55 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 22:34:50 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/memoise",
+      "ref": "installed::/usr/local/lib/R/site-library/memoise",
       "package": "memoise",
       "version": "2.0.1",
       "type": "installed",
@@ -2507,7 +2560,7 @@
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/memoise",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/memoise",
         "RemotePkgPlatform": "*",
         "RemoteSha": "2.0.1"
       },
@@ -2515,16 +2568,16 @@
       "target": "src/contrib/memoise_2.0.1.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 09:41:09 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 02:16:20 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/mime",
+      "ref": "installed::/usr/local/lib/R/site-library/mime",
       "package": "mime",
       "version": "0.13",
       "type": "installed",
@@ -2544,24 +2597,24 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/mime",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/mime",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "0.13"
       },
       "sources": [],
       "target": "src/contrib/mime_0.13.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-04-21 00:40:54 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:12:59 UTC; unix",
       "directpkg": false,
       "license": "GPL",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/openssl",
+      "ref": "installed::/usr/local/lib/R/site-library/openssl",
       "package": "openssl",
       "version": "2.4.2",
       "type": "installed",
@@ -2581,25 +2634,32 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/openssl",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/openssl",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "2.4.2"
       },
       "sources": [],
       "target": "src/contrib/openssl_2.4.2.tar.gz",
-      "platform": "x86_64-w64-mingw32",
-      "rversion": "R 4.6.1",
-      "built": "R 4.6.1; x86_64-w64-mingw32; 2026-07-04 02:07:20 UTC; windows",
+      "platform": "x86_64-pc-linux-gnu",
+      "rversion": "R 4.6.0",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-06-10 05:34:22 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran",
-      "sysreqs": "OpenSSL >= 1.0.2"
+      "sysreqs": "OpenSSL >= 1.0.2",
+      "sysreqs_packages": [
+        {
+          "sysreq": "openssl",
+          "packages": ["libssl-dev"],
+          "pre_install": {},
+          "post_install": {}
+        }
+      ]
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/otel",
+      "ref": "installed::/usr/local/lib/R/site-library/otel",
       "package": "otel",
       "version": "0.2.0",
       "type": "installed",
@@ -2619,7 +2679,7 @@
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/otel",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/otel",
         "RemotePkgPlatform": "*",
         "RemoteSha": "0.2.0"
       },
@@ -2627,16 +2687,16 @@
       "target": "src/contrib/otel_0.2.0.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 08:30:14 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 01:29:05 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/pillar",
+      "ref": "installed::/usr/local/lib/R/site-library/pillar",
       "package": "pillar",
       "version": "1.11.1",
       "type": "installed",
@@ -2698,7 +2758,7 @@
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/pillar",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/pillar",
         "RemotePkgPlatform": "*",
         "RemoteSha": "1.11.1"
       },
@@ -2706,16 +2766,16 @@
       "target": "src/contrib/pillar_1.11.1.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 10:04:22 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 02:36:29 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/pkgconfig",
+      "ref": "installed::/usr/local/lib/R/site-library/pkgconfig",
       "package": "pkgconfig",
       "version": "2.0.3",
       "type": "installed",
@@ -2735,7 +2795,7 @@
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/pkgconfig",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/pkgconfig",
         "RemotePkgPlatform": "*",
         "RemoteSha": "2.0.3"
       },
@@ -2743,23 +2803,37 @@
       "target": "src/contrib/pkgconfig_2.0.3.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 08:30:13 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 01:18:01 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/plotly",
+      "ref": "installed::/usr/local/lib/R/site-library/plotly",
       "package": "plotly",
       "version": "4.12.1",
       "type": "installed",
       "direct": false,
       "binary": true,
-      "dependencies": ["scales", "httr", "jsonlite", "magrittr", "digest", "viridisLite", "base64enc", "htmltools", "htmlwidgets", "tidyr", "RColorBrewer", "dplyr", "vctrs", "tibble", "rlang", "crosstalk", "purrr", "data.table", "promises", "ggplot2"],
+      "dependencies": ["ggplot2", "scales", "httr", "jsonlite", "magrittr", "digest", "viridisLite", "base64enc", "htmltools", "htmlwidgets", "tidyr", "RColorBrewer", "dplyr", "vctrs", "tibble", "rlang", "crosstalk", "purrr", "data.table", "promises"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "3.5.0"
+        },
+        {
+          "ref": "ggplot2",
+          "type": "depends",
+          "package": "ggplot2",
+          "op": ">=",
+          "version": "3.0.0"
+        },
         {
           "ref": "tools",
           "type": "imports",
@@ -2899,44 +2973,30 @@
           "package": "promises",
           "op": "",
           "version": ""
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "3.5.0"
-        },
-        {
-          "ref": "ggplot2",
-          "type": "depends",
-          "package": "ggplot2",
-          "op": ">=",
-          "version": "3.0.0"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/plotly",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/plotly",
         "RemotePkgPlatform": "*",
         "RemoteSha": "4.12.1"
       },
       "sources": [],
       "target": "src/contrib/plotly_4.12.1.tar.gz",
       "platform": "*",
-      "rversion": "R 4.6.1",
-      "built": "R 4.6.1; ; 2026-08-23 03:47:24 UTC; windows",
+      "rversion": "R 4.6.0",
+      "built": "R 4.6.0; ; 2026-07-23 16:26:35 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/promises",
+      "ref": "installed::/usr/local/lib/R/site-library/promises",
       "package": "promises",
       "version": "1.5.0",
       "type": "installed",
@@ -2944,6 +3004,13 @@
       "binary": true,
       "dependencies": ["fastmap", "later", "lifecycle", "magrittr", "otel", "R6", "rlang"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "4.1.0"
+        },
         {
           "ref": "fastmap",
           "type": "imports",
@@ -2992,20 +3059,13 @@
           "package": "rlang",
           "op": "",
           "version": ""
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "4.1.0"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/promises",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/promises",
         "RemotePkgPlatform": "*",
         "RemoteSha": "1.5.0"
       },
@@ -3013,16 +3073,16 @@
       "target": "src/contrib/promises_1.5.0.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 09:41:09 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 02:01:43 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/purrr",
+      "ref": "installed::/usr/local/lib/R/site-library/purrr",
       "package": "purrr",
       "version": "1.2.2",
       "type": "installed",
@@ -3030,6 +3090,13 @@
       "binary": true,
       "dependencies": ["cli", "lifecycle", "magrittr", "rlang", "vctrs"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "4.1"
+        },
         {
           "ref": "cli",
           "type": "imports",
@@ -3064,37 +3131,30 @@
           "package": "vctrs",
           "op": ">=",
           "version": "0.6.3"
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "4.1"
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/purrr",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/purrr",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "1.2.2"
       },
       "sources": [],
       "target": "src/contrib/purrr_1.2.2.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 10:04:22 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 02:56:19 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/R6",
+      "ref": "installed::/usr/local/lib/R/site-library/R6",
       "package": "R6",
       "version": "2.6.1",
       "type": "installed",
@@ -3114,7 +3174,7 @@
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/R6",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/R6",
         "RemotePkgPlatform": "*",
         "RemoteSha": "2.6.1"
       },
@@ -3122,16 +3182,16 @@
       "target": "src/contrib/R6_2.6.1.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 08:30:09 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 01:25:41 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/rappdirs",
+      "ref": "installed::/usr/local/lib/R/site-library/rappdirs",
       "package": "rappdirs",
       "version": "0.3.4",
       "type": "installed",
@@ -3151,24 +3211,24 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/rappdirs",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/rappdirs",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "0.3.4"
       },
       "sources": [],
       "target": "src/contrib/rappdirs_0.3.4.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 08:30:15 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:26:10 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/RColorBrewer",
+      "ref": "installed::/usr/local/lib/R/site-library/RColorBrewer",
       "package": "RColorBrewer",
       "version": "1.1-3",
       "type": "installed",
@@ -3188,7 +3248,7 @@
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/RColorBrewer",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/RColorBrewer",
         "RemotePkgPlatform": "*",
         "RemoteSha": "1.1-3"
       },
@@ -3196,16 +3256,16 @@
       "target": "src/contrib/RColorBrewer_1.1-3.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-04-21 00:40:53 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 01:19:19 UTC; unix",
       "directpkg": false,
       "license": "Apache License 2.0",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/Rcpp",
+      "ref": "installed::/usr/local/lib/R/site-library/Rcpp",
       "package": "Rcpp",
       "version": "1.1.2",
       "type": "installed",
@@ -3213,6 +3273,13 @@
       "binary": true,
       "dependencies": [],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "3.5.0"
+        },
         {
           "ref": "methods",
           "type": "imports",
@@ -3226,37 +3293,30 @@
           "package": "utils",
           "op": "",
           "version": ""
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "3.5.0"
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/Rcpp",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/Rcpp",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "1.1.2"
       },
       "sources": [],
       "target": "src/contrib/Rcpp_1.1.2.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-07-07 00:12:25 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-07-06 12:45:29 UTC; unix",
       "directpkg": false,
       "license": "GPL (>= 2)",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/rlang",
+      "ref": "installed::/usr/local/lib/R/site-library/rlang",
       "package": "rlang",
       "version": "1.3.0",
       "type": "installed",
@@ -3265,42 +3325,42 @@
       "dependencies": [],
       "deps": [
         {
-          "ref": "utils",
-          "type": "imports",
-          "package": "utils",
-          "op": "",
-          "version": ""
-        },
-        {
           "ref": "R",
           "type": "depends",
           "package": "R",
           "op": ">=",
           "version": "4.0.0"
+        },
+        {
+          "ref": "utils",
+          "type": "imports",
+          "package": "utils",
+          "op": "",
+          "version": ""
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/rlang",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/rlang",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "1.3.0"
       },
       "sources": [],
       "target": "src/contrib/rlang_1.3.0.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-07-07 00:08:36 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-07-06 12:49:45 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/rmarkdown",
+      "ref": "installed::/usr/local/lib/R/site-library/rmarkdown",
       "package": "rmarkdown",
       "version": "2.31",
       "type": "installed",
@@ -3308,6 +3368,13 @@
       "binary": true,
       "dependencies": ["bslib", "evaluate", "fontawesome", "htmltools", "jquerylib", "jsonlite", "knitr", "tinytex", "xfun", "yaml"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "3.0"
+        },
         {
           "ref": "bslib",
           "type": "imports",
@@ -3398,20 +3465,13 @@
           "package": "yaml",
           "op": ">=",
           "version": "2.1.19"
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "3.0"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/rmarkdown",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/rmarkdown",
         "RemotePkgPlatform": "*",
         "RemoteSha": "2.31"
       },
@@ -3419,17 +3479,24 @@
       "target": "src/contrib/rmarkdown_2.31.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 10:25:02 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 03:34:56 UTC; unix",
       "directpkg": false,
       "license": "GPL-3",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran",
-      "sysreqs": "pandoc (>= 1.14) - http://pandoc.org"
+      "sysreqs": "pandoc (>= 1.14) - http://pandoc.org",
+      "sysreqs_packages": [
+        {
+          "sysreq": "pandoc",
+          "packages": ["pandoc"],
+          "pre_install": {},
+          "post_install": {}
+        }
+      ]
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/S7",
+      "ref": "installed::/usr/local/lib/R/site-library/S7",
       "package": "S7",
       "version": "0.2.2",
       "type": "installed",
@@ -3438,42 +3505,42 @@
       "dependencies": [],
       "deps": [
         {
-          "ref": "utils",
-          "type": "imports",
-          "package": "utils",
-          "op": "",
-          "version": ""
-        },
-        {
           "ref": "R",
           "type": "depends",
           "package": "R",
           "op": ">=",
           "version": "3.5.0"
+        },
+        {
+          "ref": "utils",
+          "type": "imports",
+          "package": "utils",
+          "op": "",
+          "version": ""
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/S7",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/S7",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "0.2.2"
       },
       "sources": [],
       "target": "src/contrib/S7_0.2.2.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 08:30:09 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:21:55 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/sass",
+      "ref": "installed::/usr/local/lib/R/site-library/sass",
       "package": "sass",
       "version": "0.4.10",
       "type": "installed",
@@ -3521,25 +3588,32 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/sass",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/sass",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "0.4.10"
       },
       "sources": [],
       "target": "src/contrib/sass_0.4.10.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 09:41:09 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 02:46:56 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran",
-      "sysreqs": "GNU make"
+      "sysreqs": "GNU make",
+      "sysreqs_packages": [
+        {
+          "sysreq": "gnumake",
+          "packages": ["make"],
+          "pre_install": {},
+          "post_install": {}
+        }
+      ]
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/scales",
+      "ref": "installed::/usr/local/lib/R/site-library/scales",
       "package": "scales",
       "version": "1.4.0",
       "type": "installed",
@@ -3547,6 +3621,13 @@
       "binary": true,
       "dependencies": ["cli", "farver", "glue", "labeling", "lifecycle", "R6", "RColorBrewer", "rlang", "viridisLite"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "4.1"
+        },
         {
           "ref": "cli",
           "type": "imports",
@@ -3609,20 +3690,13 @@
           "package": "viridisLite",
           "op": "",
           "version": ""
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "4.1"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/scales",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/scales",
         "RemotePkgPlatform": "*",
         "RemoteSha": "1.4.0"
       },
@@ -3630,16 +3704,16 @@
       "target": "src/contrib/scales_1.4.0.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 09:41:07 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 02:00:26 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/shiny",
+      "ref": "installed::/usr/local/lib/R/site-library/shiny",
       "package": "shiny",
       "version": "1.14.0",
       "type": "installed",
@@ -3647,6 +3721,20 @@
       "binary": true,
       "dependencies": ["bslib", "cachem", "cli", "commonmark", "fastmap", "fontawesome", "glue", "htmltools", "httpuv", "jsonlite", "later", "lifecycle", "mime", "otel", "promises", "R6", "rlang", "sourcetools", "withr", "xtable"],
       "deps": [
+        {
+          "ref": "methods",
+          "type": "depends",
+          "package": "methods",
+          "op": "",
+          "version": ""
+        },
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "3.1.2"
+        },
         {
           "ref": "bslib",
           "type": "imports",
@@ -3807,44 +3895,30 @@
           "package": "xtable",
           "op": "",
           "version": ""
-        },
-        {
-          "ref": "methods",
-          "type": "depends",
-          "package": "methods",
-          "op": "",
-          "version": ""
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "3.1.2"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/shiny",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/shiny",
         "RemotePkgPlatform": "*",
         "RemoteSha": "1.14.0"
       },
       "sources": [],
       "target": "src/contrib/shiny_1.14.0.tar.gz",
       "platform": "*",
-      "rversion": "R 4.6.1",
-      "built": "R 4.6.1; ; 2026-07-04 02:52:24 UTC; windows",
+      "rversion": "R 4.6.0",
+      "built": "R 4.6.0; ; 2026-06-22 05:31:44 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/shinyjs",
+      "ref": "installed::/usr/local/lib/R/site-library/shinyjs",
       "package": "shinyjs",
       "version": "2.1.1",
       "type": "installed",
@@ -3852,6 +3926,13 @@
       "binary": true,
       "dependencies": ["digest", "jsonlite", "shiny"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "3.1.0"
+        },
         {
           "ref": "digest",
           "type": "imports",
@@ -3872,20 +3953,13 @@
           "package": "shiny",
           "op": ">=",
           "version": "1.0.0"
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "3.1.0"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/shinyjs",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/shinyjs",
         "RemotePkgPlatform": "*",
         "RemoteSha": "2.1.1"
       },
@@ -3893,16 +3967,16 @@
       "target": "src/contrib/shinyjs_2.1.1.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 10:41:58 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 22:54:42 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/sourcetools",
+      "ref": "installed::/usr/local/lib/R/site-library/sourcetools",
       "package": "sourcetools",
       "version": "0.1.7-2",
       "type": "installed",
@@ -3922,24 +3996,24 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/sourcetools",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/sourcetools",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "0.1.7-2"
       },
       "sources": [],
       "target": "src/contrib/sourcetools_0.1.7-2.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 08:30:13 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:26:01 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/stringi",
+      "ref": "installed::/usr/local/lib/R/site-library/stringi",
       "package": "stringi",
       "version": "1.8.9",
       "type": "installed",
@@ -3947,6 +4021,13 @@
       "binary": true,
       "dependencies": [],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "3.4"
+        },
         {
           "ref": "tools",
           "type": "imports",
@@ -3967,38 +4048,38 @@
           "package": "stats",
           "op": "",
           "version": ""
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "3.4"
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/stringi",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/stringi",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "1.8.9"
       },
       "sources": [],
       "target": "src/contrib/stringi_1.8.9.tar.gz",
-      "platform": "x86_64-w64-mingw32",
-      "rversion": "R 4.6.1",
-      "built": "R 4.6.1; x86_64-w64-mingw32; 2026-08-19 11:46:22 UTC; windows",
+      "platform": "x86_64-pc-linux-gnu",
+      "rversion": "R 4.6.0",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-08-05 05:52:02 UTC; unix",
       "directpkg": false,
       "license": "file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran",
-      "sysreqs": "ICU4C (>= 61, optional)"
+      "sysreqs": "ICU4C (>= 61, optional)",
+      "sysreqs_packages": [
+        {
+          "sysreq": "libicu",
+          "packages": ["libicu-dev"],
+          "pre_install": {},
+          "post_install": {}
+        }
+      ]
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/stringr",
+      "ref": "installed::/usr/local/lib/R/site-library/stringr",
       "package": "stringr",
       "version": "1.6.0",
       "type": "installed",
@@ -4006,6 +4087,13 @@
       "binary": true,
       "dependencies": ["cli", "glue", "lifecycle", "magrittr", "rlang", "stringi", "vctrs"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "4.1.0"
+        },
         {
           "ref": "cli",
           "type": "imports",
@@ -4054,20 +4142,13 @@
           "package": "vctrs",
           "op": ">=",
           "version": "0.4.0"
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "4.1.0"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/stringr",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/stringr",
         "RemotePkgPlatform": "*",
         "RemoteSha": "1.6.0"
       },
@@ -4075,16 +4156,16 @@
       "target": "src/contrib/stringr_1.6.0.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 10:04:21 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 02:37:54 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/sys",
+      "ref": "installed::/usr/local/lib/R/site-library/sys",
       "package": "sys",
       "version": "3.4.3",
       "type": "installed",
@@ -4096,24 +4177,24 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/sys",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/sys",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "3.4.3"
       },
       "sources": [],
       "target": "src/contrib/sys_3.4.3.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 08:30:15 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:23:34 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/tibble",
+      "ref": "installed::/usr/local/lib/R/site-library/tibble",
       "package": "tibble",
       "version": "3.3.1",
       "type": "installed",
@@ -4121,6 +4202,13 @@
       "binary": true,
       "dependencies": ["cli", "lifecycle", "magrittr", "pillar", "pkgconfig", "rlang", "vctrs"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "3.4.0"
+        },
         {
           "ref": "cli",
           "type": "imports",
@@ -4183,37 +4271,30 @@
           "package": "vctrs",
           "op": ">=",
           "version": "0.5.0"
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "3.4.0"
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/tibble",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/tibble",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "3.3.1"
       },
       "sources": [],
       "target": "src/contrib/tibble_3.3.1.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-20 02:35:46 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 02:41:18 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/tidyr",
+      "ref": "installed::/usr/local/lib/R/site-library/tidyr",
       "package": "tidyr",
       "version": "1.3.2",
       "type": "installed",
@@ -4221,6 +4302,13 @@
       "binary": true,
       "dependencies": ["cli", "dplyr", "glue", "lifecycle", "magrittr", "purrr", "rlang", "stringr", "tibble", "tidyselect", "vctrs"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "4.1.0"
+        },
         {
           "ref": "cli",
           "type": "imports",
@@ -4304,37 +4392,30 @@
           "package": "vctrs",
           "op": ">=",
           "version": "0.5.2"
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "4.1.0"
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/tidyr",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/tidyr",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "1.3.2"
       },
       "sources": [],
       "target": "src/contrib/tidyr_1.3.2.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 11:00:46 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-05-07 06:48:16 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/tidyselect",
+      "ref": "installed::/usr/local/lib/R/site-library/tidyselect",
       "package": "tidyselect",
       "version": "1.2.1",
       "type": "installed",
@@ -4342,6 +4423,13 @@
       "binary": true,
       "dependencies": ["cli", "glue", "lifecycle", "rlang", "vctrs", "withr"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "3.4"
+        },
         {
           "ref": "cli",
           "type": "imports",
@@ -4383,20 +4471,13 @@
           "package": "withr",
           "op": "",
           "version": ""
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "3.4"
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/tidyselect",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/tidyselect",
         "RemotePkgPlatform": "*",
         "RemoteSha": "1.2.1"
       },
@@ -4404,16 +4485,16 @@
       "target": "src/contrib/tidyselect_1.2.1.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 10:04:22 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 02:57:25 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/tinytex",
+      "ref": "installed::/usr/local/lib/R/site-library/tinytex",
       "package": "tinytex",
       "version": "0.60",
       "type": "installed",
@@ -4433,24 +4514,24 @@
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/tinytex",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/tinytex",
         "RemotePkgPlatform": "*",
         "RemoteSha": "0.60"
       },
       "sources": [],
       "target": "src/contrib/tinytex_0.60.tar.gz",
       "platform": "*",
-      "rversion": "R 4.6.1",
-      "built": "R 4.6.1; ; 2026-07-04 01:50:24 UTC; windows",
+      "rversion": "R 4.6.0",
+      "built": "R 4.6.0; ; 2026-06-17 05:37:41 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/utf8",
+      "ref": "installed::/usr/local/lib/R/site-library/utf8",
       "package": "utf8",
       "version": "1.2.6",
       "type": "installed",
@@ -4470,24 +4551,24 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/utf8",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/utf8",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "1.2.6"
       },
       "sources": [],
       "target": "src/contrib/utf8_1.2.6.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 08:30:10 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:27:06 UTC; unix",
       "directpkg": false,
       "license": "Apache License (== 2.0) | file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/vctrs",
+      "ref": "installed::/usr/local/lib/R/site-library/vctrs",
       "package": "vctrs",
       "version": "0.7.3",
       "type": "installed",
@@ -4495,6 +4576,13 @@
       "binary": true,
       "dependencies": ["cli", "glue", "lifecycle", "rlang"],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "4.0.0"
+        },
         {
           "ref": "cli",
           "type": "imports",
@@ -4522,37 +4610,30 @@
           "package": "rlang",
           "op": ">=",
           "version": "1.1.7"
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "4.0.0"
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/vctrs",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/vctrs",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "0.7.3"
       },
       "sources": [],
       "target": "src/contrib/vctrs_0.7.3.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 09:41:07 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 02:34:26 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/viridisLite",
+      "ref": "installed::/usr/local/lib/R/site-library/viridisLite",
       "package": "viridisLite",
       "version": "0.4.3",
       "type": "installed",
@@ -4572,7 +4653,7 @@
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/viridisLite",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/viridisLite",
         "RemotePkgPlatform": "*",
         "RemoteSha": "0.4.3"
       },
@@ -4580,16 +4661,16 @@
       "target": "src/contrib/viridisLite_0.4.3.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 08:30:11 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 01:27:48 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/withr",
+      "ref": "installed::/usr/local/lib/R/site-library/withr",
       "package": "withr",
       "version": "3.0.3",
       "type": "installed",
@@ -4597,6 +4678,13 @@
       "binary": true,
       "dependencies": [],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "3.6.0"
+        },
         {
           "ref": "graphics",
           "type": "imports",
@@ -4610,37 +4698,30 @@
           "package": "grDevices",
           "op": "",
           "version": ""
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "3.6.0"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/withr",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/withr",
         "RemotePkgPlatform": "*",
         "RemoteSha": "3.0.3"
       },
       "sources": [],
       "target": "src/contrib/withr_3.0.3.tar.gz",
       "platform": "*",
-      "rversion": "R 4.6.1",
-      "built": "R 4.6.1; ; 2026-07-04 00:57:36 UTC; windows",
+      "rversion": "R 4.6.0",
+      "built": "R 4.6.0; ; 2026-06-20 16:32:46 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/xfun",
+      "ref": "installed::/usr/local/lib/R/site-library/xfun",
       "package": "xfun",
       "version": "0.60",
       "type": "installed",
@@ -4648,6 +4729,13 @@
       "binary": true,
       "dependencies": [],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "3.2.0"
+        },
         {
           "ref": "grDevices",
           "type": "imports",
@@ -4668,37 +4756,30 @@
           "package": "tools",
           "op": "",
           "version": ""
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "3.2.0"
         }
       ],
       "vignettes": false,
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/xfun",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/xfun",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "0.60"
       },
       "sources": [],
       "target": "src/contrib/xfun_0.60.tar.gz",
-      "platform": "x86_64-w64-mingw32",
-      "rversion": "R 4.6.1",
-      "built": "R 4.6.1; x86_64-w64-mingw32; 2026-08-23 00:53:48 UTC; windows",
+      "platform": "x86_64-pc-linux-gnu",
+      "rversion": "R 4.6.0",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-07-09 17:31:47 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/xtable",
+      "ref": "installed::/usr/local/lib/R/site-library/xtable",
       "package": "xtable",
       "version": "1.8-8",
       "type": "installed",
@@ -4706,6 +4787,13 @@
       "binary": true,
       "dependencies": [],
       "deps": [
+        {
+          "ref": "R",
+          "type": "depends",
+          "package": "R",
+          "op": ">=",
+          "version": "2.10.0"
+        },
         {
           "ref": "stats",
           "type": "imports",
@@ -4726,20 +4814,13 @@
           "package": "methods",
           "op": "",
           "version": ""
-        },
-        {
-          "ref": "R",
-          "type": "depends",
-          "package": "R",
-          "op": ">=",
-          "version": "2.10.0"
         }
       ],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/xtable",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/xtable",
         "RemotePkgPlatform": "*",
         "RemoteSha": "1.8-8"
       },
@@ -4747,16 +4828,16 @@
       "target": "src/contrib/xtable_1.8-8.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-05-26 08:30:13 UTC; windows",
+      "built": "R 4.6.0; ; 2026-04-24 01:35:24 UTC; unix",
       "directpkg": false,
       "license": "GPL (>= 2)",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/yaml",
+      "ref": "installed::/usr/local/lib/R/site-library/yaml",
       "package": "yaml",
       "version": "2.3.12",
       "type": "installed",
@@ -4768,24 +4849,24 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:\\Users\\Eric\\AppData\\Local\\R\\win-library\\4.6/yaml",
-        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemotePkgRef": "installed::/usr/local/lib/R/site-library/yaml",
+        "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "2.3.12"
       },
       "sources": [],
       "target": "src/contrib/yaml_2.3.12.tar.gz",
-      "platform": "x86_64-w64-mingw32",
+      "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-w64-mingw32; 2026-05-26 08:30:13 UTC; windows",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:35:34 UTC; unix",
       "directpkg": false,
       "license": "BSD_3_clause + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "sysreqs_packages": {}
     },
     {
-      "ref": "installed::C:/PROGRA~1/R/R-46~1.0/library/codetools",
+      "ref": "installed::/usr/local/lib/R/library/codetools",
       "package": "codetools",
       "version": "0.2-20",
       "type": "installed",
@@ -4805,21 +4886,32 @@
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::C:/PROGRA~1/R/R-46~1.0/library/codetools",
+        "RemotePkgRef": "installed::/usr/local/lib/R/library/codetools",
         "RemotePkgPlatform": "*",
         "RemoteSha": "0.2-20"
       },
       "sources": [],
       "target": "src/contrib/codetools_0.2-20.tar.gz",
       "platform": "*",
-      "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-04-24 08:16:28 UTC; windows",
+      "rversion": "R 4.6.1",
+      "built": "R 4.6.1; ; 2026-07-15 10:48:06 UTC; unix",
       "directpkg": false,
       "license": "GPL",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "repotype": "cran"
+      "repotype": "cran",
+      "sysreqs_packages": {}
     }
-  ]
+  ],
+  "sysreqs": {
+    "os": "linux",
+    "distribution": "ubuntu",
+    "version": "24.04",
+    "url": null,
+    "pre_install": ["apt-get -y update"],
+    "install_scripts": ["apt-get -y install libcurl4-openssl-dev libssl-dev cmake make libuv1-dev zlib1g-dev pandoc libicu-dev"],
+    "post_install": {},
+    "packages": ["libcurl4-openssl-dev", "libssl-dev", "cmake", "make", "libuv1-dev", "zlib1g-dev", "pandoc", "libicu-dev"]
+  }
 }
