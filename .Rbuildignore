@@ -17,3 +17,4 @@
 ^\.dockerignore$
 ^manifest\.json$
 ^data-raw$
+^pkg\.lock$
