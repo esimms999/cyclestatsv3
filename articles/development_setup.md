@@ -49,9 +49,7 @@ devtools::install()
 ## 5. Add the Data File
 
 The app reads from a pre-downloaded [Ride with
-GPS](https://ridewithgps.com/) export. Place your `activities.rds` at:
-
-    inst/extdata/activities.rds
+GPS](https://ridewithgps.com/) export.
 
 To obtain this file, run `data-raw/get_data.R`. It authenticates against
 the Ride with GPS API using your API key and auth token, paginates
