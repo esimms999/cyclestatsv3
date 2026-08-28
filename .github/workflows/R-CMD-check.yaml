@@ -38,7 +38,7 @@ jobs:
         shell: Rscript {0}
 
       - name: Install check dependencies
-        run: pak::pkg_install(c("rcmdcheck", "sessioninfo"))
+        run: pak::pkg_install(c("rcmdcheck", "sessioninfo", "knitr", "rmarkdown"))
         shell: Rscript {0}
 
       - uses: r-lib/actions/check-r-package@v2
