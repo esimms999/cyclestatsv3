@@ -31,4 +31,4 @@ RUN R CMD INSTALL /build/cyclestatsv3
 EXPOSE 3838
 
 CMD ["Rscript", "-e", \
-     "cyclestats::run_app(options = list(host = '0.0.0.0', port = 3838))"]
+     "cyclestatsv3::run_app(options = list(host = '0.0.0.0', port = 3838))"]
