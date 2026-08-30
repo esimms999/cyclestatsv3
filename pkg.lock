@@ -6,7 +6,7 @@
   "packages": [
     {
       "ref": "deps::.",
-      "package": "cyclestats-deps",
+      "package": "cyclestatsv3-deps",
       "version": "3.00",
       "type": "deps",
       "direct": true,
@@ -160,7 +160,7 @@
         "RemoteType": "deps"
       },
       "sources": [],
-      "target": "src/contrib/cyclestats-deps_3.00.tar.gz",
+      "target": "src/contrib/cyclestatsv3-deps_3.00.tar.gz",
       "platform": "source",
       "rversion": "*",
       "directpkg": true,
@@ -683,7 +683,7 @@
     {
       "ref": "installed::/usr/local/lib/R/site-library/curl",
       "package": "curl",
-      "version": "7.1.0",
+      "version": "8.0.0",
       "type": "installed",
       "direct": false,
       "binary": true,
@@ -703,13 +703,13 @@
         "RemoteType": "installed",
         "RemotePkgRef": "installed::/usr/local/lib/R/site-library/curl",
         "RemotePkgPlatform": "x86_64-pc-linux-gnu",
-        "RemoteSha": "7.1.0"
+        "RemoteSha": "8.0.0"
       },
       "sources": [],
-      "target": "src/contrib/curl_7.1.0.tar.gz",
+      "target": "src/contrib/curl_8.0.0.tar.gz",
       "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-04-24 01:32:50 UTC; unix",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-08-26 04:37:59 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
@@ -734,7 +734,7 @@
     {
       "ref": "installed::/usr/local/lib/R/site-library/data.table",
       "package": "data.table",
-      "version": "1.18.4",
+      "version": "1.18.6.1",
       "type": "installed",
       "direct": false,
       "binary": true,
@@ -761,13 +761,13 @@
         "RemoteType": "installed",
         "RemotePkgRef": "installed::/usr/local/lib/R/site-library/data.table",
         "RemotePkgPlatform": "x86_64-pc-linux-gnu",
-        "RemoteSha": "1.18.4"
+        "RemoteSha": "1.18.6.1"
       },
       "sources": [],
-      "target": "src/contrib/data.table_1.18.4.tar.gz",
+      "target": "src/contrib/data.table_1.18.6.1.tar.gz",
       "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-05-07 06:44:34 UTC; unix",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-08-25 04:30:51 UTC; unix",
       "directpkg": false,
       "license": "MPL-2.0 | file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
@@ -2382,7 +2382,7 @@
     {
       "ref": "installed::/usr/local/lib/R/site-library/litedown",
       "package": "litedown",
-      "version": "0.10",
+      "version": "0.11",
       "type": "installed",
       "direct": false,
       "binary": true,
@@ -2423,13 +2423,13 @@
         "RemoteType": "installed",
         "RemotePkgRef": "installed::/usr/local/lib/R/site-library/litedown",
         "RemotePkgPlatform": "*",
-        "RemoteSha": "0.10"
+        "RemoteSha": "0.11"
       },
       "sources": [],
-      "target": "src/contrib/litedown_0.10.tar.gz",
+      "target": "src/contrib/litedown_0.11.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-07-12 04:50:37 UTC; unix",
+      "built": "R 4.6.0; ; 2026-08-27 05:32:48 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
