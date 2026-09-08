@@ -1,6 +1,6 @@
 {
   "lockfile_version": 1,
-  "os": "Ubuntu 24.04.4 LTS",
+  "os": "Ubuntu 24.04.5 LTS",
   "r_version": "R version 4.6.1 (2026-06-24)",
   "platform": "x86_64-pc-linux-gnu",
   "packages": [
@@ -1901,7 +1901,7 @@
     {
       "ref": "installed::/usr/local/lib/R/site-library/httr",
       "package": "httr",
-      "version": "1.4.8",
+      "version": "1.4.9",
       "type": "installed",
       "direct": false,
       "binary": true,
@@ -1956,13 +1956,13 @@
         "RemoteType": "installed",
         "RemotePkgRef": "installed::/usr/local/lib/R/site-library/httr",
         "RemotePkgPlatform": "*",
-        "RemoteSha": "1.4.8"
+        "RemoteSha": "1.4.9"
       },
       "sources": [],
-      "target": "src/contrib/httr_1.4.8.tar.gz",
+      "target": "src/contrib/httr_1.4.9.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-04-24 01:37:52 UTC; unix",
+      "built": "R 4.6.0; ; 2026-09-02 03:59:46 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
@@ -2105,7 +2105,7 @@
     {
       "ref": "installed::/usr/local/lib/R/site-library/knitr",
       "package": "knitr",
-      "version": "1.51",
+      "version": "1.52",
       "type": "installed",
       "direct": false,
       "binary": true,
@@ -2167,13 +2167,13 @@
         "RemoteType": "installed",
         "RemotePkgRef": "installed::/usr/local/lib/R/site-library/knitr",
         "RemotePkgPlatform": "*",
-        "RemoteSha": "1.51"
+        "RemoteSha": "1.52"
       },
       "sources": [],
-      "target": "src/contrib/knitr_1.51.tar.gz",
+      "target": "src/contrib/knitr_1.52.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-04-24 03:26:17 UTC; unix",
+      "built": "R 4.6.0; ; 2026-09-07 03:56:59 UTC; unix",
       "directpkg": false,
       "license": "GPL",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
@@ -3362,7 +3362,7 @@
     {
       "ref": "installed::/usr/local/lib/R/site-library/rmarkdown",
       "package": "rmarkdown",
-      "version": "2.31",
+      "version": "2.32",
       "type": "installed",
       "direct": false,
       "binary": true,
@@ -3422,7 +3422,7 @@
           "type": "imports",
           "package": "knitr",
           "op": ">=",
-          "version": "1.43"
+          "version": "1.50"
         },
         {
           "ref": "methods",
@@ -3473,19 +3473,19 @@
         "RemoteType": "installed",
         "RemotePkgRef": "installed::/usr/local/lib/R/site-library/rmarkdown",
         "RemotePkgPlatform": "*",
-        "RemoteSha": "2.31"
+        "RemoteSha": "2.32"
       },
       "sources": [],
-      "target": "src/contrib/rmarkdown_2.31.tar.gz",
+      "target": "src/contrib/rmarkdown_2.32.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-04-24 03:34:56 UTC; unix",
+      "built": "R 4.6.0; ; 2026-09-02 04:00:02 UTC; unix",
       "directpkg": false,
-      "license": "GPL-3",
+      "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
-      "sysreqs": "pandoc (>= 1.14) - http://pandoc.org",
+      "sysreqs": "pandoc (>= 2.8) - http://pandoc.org",
       "sysreqs_packages": [
         {
           "sysreq": "pandoc",
