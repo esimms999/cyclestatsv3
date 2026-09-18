@@ -4496,7 +4496,7 @@
     {
       "ref": "installed::/usr/local/lib/R/site-library/tinytex",
       "package": "tinytex",
-      "version": "0.60",
+      "version": "0.61",
       "type": "installed",
       "direct": false,
       "binary": true,
@@ -4516,13 +4516,13 @@
         "RemoteType": "installed",
         "RemotePkgRef": "installed::/usr/local/lib/R/site-library/tinytex",
         "RemotePkgPlatform": "*",
-        "RemoteSha": "0.60"
+        "RemoteSha": "0.61"
       },
       "sources": [],
-      "target": "src/contrib/tinytex_0.60.tar.gz",
+      "target": "src/contrib/tinytex_0.61.tar.gz",
       "platform": "*",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; ; 2026-06-17 05:37:41 UTC; unix",
+      "built": "R 4.6.0; ; 2026-09-18 04:03:45 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
@@ -4723,7 +4723,7 @@
     {
       "ref": "installed::/usr/local/lib/R/site-library/xfun",
       "package": "xfun",
-      "version": "0.60",
+      "version": "0.61",
       "type": "installed",
       "direct": false,
       "binary": true,
@@ -4764,13 +4764,13 @@
         "RemoteType": "installed",
         "RemotePkgRef": "installed::/usr/local/lib/R/site-library/xfun",
         "RemotePkgPlatform": "x86_64-pc-linux-gnu",
-        "RemoteSha": "0.60"
+        "RemoteSha": "0.61"
       },
       "sources": [],
-      "target": "src/contrib/xfun_0.60.tar.gz",
+      "target": "src/contrib/xfun_0.61.tar.gz",
       "platform": "x86_64-pc-linux-gnu",
       "rversion": "R 4.6.0",
-      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-07-09 17:31:47 UTC; unix",
+      "built": "R 4.6.0; x86_64-pc-linux-gnu; 2026-09-17 04:24:25 UTC; unix",
       "directpkg": false,
       "license": "MIT + file LICENSE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
