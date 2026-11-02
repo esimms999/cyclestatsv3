@@ -1,7 +1,7 @@
 {
   "lockfile_version": 1,
-  "os": "Ubuntu 24.04.5 LTS",
-  "r_version": "R version 4.6.1 (2026-06-24)",
+  "os": "Ubuntu 26.04.1 LTS",
+  "r_version": "R version 4.6.2 (2026-10-29)",
   "platform": "x86_64-pc-linux-gnu",
   "packages": [
     {
@@ -1371,7 +1371,7 @@
     {
       "ref": "curl",
       "package": "curl",
-      "version": "8.0.0",
+      "version": "8.1.0",
       "type": "standard",
       "direct": false,
       "binary": false,
@@ -1449,16 +1449,16 @@
         "RemoteRef": "curl",
         "RemoteRepos": "https://cran.rstudio.com",
         "RemotePkgPlatform": "source",
-        "RemoteSha": "8.0.0"
+        "RemoteSha": "8.1.0"
       },
-      "sources": ["https://cran.rstudio.com/src/contrib/curl_8.0.0.tar.gz", "https://cran.rstudio.com/src/contrib/Archive/curl/curl_8.0.0.tar.gz"],
-      "target": "src/contrib/curl_8.0.0.tar.gz",
+      "sources": ["https://cran.rstudio.com/src/contrib/curl_8.1.0.tar.gz", "https://cran.rstudio.com/src/contrib/Archive/curl/curl_8.1.0.tar.gz"],
+      "target": "src/contrib/curl_8.1.0.tar.gz",
       "platform": "source",
       "rversion": "*",
       "directpkg": false,
       "license": "MIT + file LICENSE",
-      "sha256": "5d13befc0a90eba33cfda617d7b4e0b2a271962f397256f87328c37a3abc6717",
-      "filesize": 733542,
+      "sha256": "ab3907ac4f063d614c778b8540d7e2e7b108dc6ab82c42e471cff2a1ca21205b",
+      "filesize": 730855,
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
@@ -4972,19 +4972,12 @@
     {
       "ref": "litedown",
       "package": "litedown",
-      "version": "0.11",
+      "version": "1.0",
       "type": "standard",
       "direct": false,
       "binary": false,
-      "dependencies": ["commonmark", "xfun"],
+      "dependencies": ["xfun"],
       "deps": [
-        {
-          "ref": "commonmark",
-          "type": "imports",
-          "package": "commonmark",
-          "op": ">=",
-          "version": "2.0.0"
-        },
         {
           "ref": "R",
           "type": "depends",
@@ -5039,26 +5032,25 @@
           "type": "imports",
           "package": "xfun",
           "op": ">=",
-          "version": "0.55"
+          "version": "0.62"
         }
       ],
       "vignettes": false,
-      "needscompilation": false,
+      "needscompilation": true,
       "metadata": {
         "RemoteType": "standard",
         "RemotePkgRef": "litedown",
         "RemoteRef": "litedown",
         "RemoteRepos": "https://cran.rstudio.com",
         "RemotePkgPlatform": "source",
-        "RemoteSha": "0.11"
+        "RemoteSha": "1.0"
       },
-      "sources": ["https://cran.rstudio.com/src/contrib/litedown_0.11.tar.gz", "https://cran.rstudio.com/src/contrib/Archive/litedown/litedown_0.11.tar.gz"],
-      "target": "src/contrib/litedown_0.11.tar.gz",
+      "sources": ["https://cran.rstudio.com/src/contrib/litedown_1.0.tar.gz", "https://cran.rstudio.com/src/contrib/Archive/litedown/litedown_1.0.tar.gz"],
+      "target": "src/contrib/litedown_1.0.tar.gz",
       "platform": "source",
       "rversion": "*",
       "directpkg": false,
       "license": "MIT + file LICENSE",
-      "sha256": "161d9bf1359d69bf4aa8b2d755db2b722a844a90554978612e0d4198931d574d",
       "filesize": 112841,
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
@@ -5147,7 +5139,7 @@
     {
       "ref": "markdown",
       "package": "markdown",
-      "version": "2.0",
+      "version": "2.1",
       "type": "standard",
       "direct": false,
       "binary": false,
@@ -5172,7 +5164,7 @@
           "type": "depends",
           "package": "R",
           "op": ">=",
-          "version": "2.11.1"
+          "version": "3.2.0"
         },
         {
           "ref": "RCurl",
@@ -5218,16 +5210,16 @@
         "RemoteRef": "markdown",
         "RemoteRepos": "https://cran.rstudio.com",
         "RemotePkgPlatform": "source",
-        "RemoteSha": "2.0"
+        "RemoteSha": "2.1"
       },
-      "sources": ["https://cran.rstudio.com/src/contrib/markdown_2.0.tar.gz", "https://cran.rstudio.com/src/contrib/Archive/markdown/markdown_2.0.tar.gz"],
-      "target": "src/contrib/markdown_2.0.tar.gz",
+      "sources": ["https://cran.rstudio.com/src/contrib/markdown_2.1.tar.gz", "https://cran.rstudio.com/src/contrib/Archive/markdown/markdown_2.1.tar.gz"],
+      "target": "src/contrib/markdown_2.1.tar.gz",
       "platform": "source",
       "rversion": "*",
       "directpkg": false,
       "license": "MIT + file LICENSE",
-      "sha256": "a560de75fb6878901e38febfef3ea8d21cb63af63de0e583019867d189bf9541",
-      "filesize": 23664,
+      "sha256": "dbac75f985c945a70981ad1bfb4640bd4b765af83365643dbf7774357026a6cb",
+      "filesize": 21362,
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
@@ -9550,7 +9542,7 @@
     {
       "ref": "xfun",
       "package": "xfun",
-      "version": "0.61",
+      "version": "0.62",
       "type": "standard",
       "direct": false,
       "binary": false,
@@ -9560,13 +9552,6 @@
           "ref": "codetools",
           "type": "suggests",
           "package": "codetools",
-          "op": "",
-          "version": ""
-        },
-        {
-          "ref": "commonmark",
-          "type": "suggests",
-          "package": "commonmark",
           "op": "",
           "version": ""
         },
@@ -9726,16 +9711,16 @@
         "RemoteRef": "xfun",
         "RemoteRepos": "https://cran.rstudio.com",
         "RemotePkgPlatform": "source",
-        "RemoteSha": "0.61"
+        "RemoteSha": "0.62"
       },
-      "sources": ["https://cran.rstudio.com/src/contrib/xfun_0.61.tar.gz", "https://cran.rstudio.com/src/contrib/Archive/xfun/xfun_0.61.tar.gz"],
-      "target": "src/contrib/xfun_0.61.tar.gz",
+      "sources": ["https://cran.rstudio.com/src/contrib/xfun_0.62.tar.gz", "https://cran.rstudio.com/src/contrib/Archive/xfun/xfun_0.62.tar.gz"],
+      "target": "src/contrib/xfun_0.62.tar.gz",
       "platform": "source",
       "rversion": "*",
       "directpkg": false,
       "license": "MIT + file LICENSE",
-      "sha256": "b0deb0e2aff784e511545193e5583fc2df3a98bc877287280f19341661769530",
-      "filesize": 205446,
+      "sha256": "56102222347f91ef0446dfb203016ff5935d6d6b0bff3b8776673c5e46a94baf",
+      "filesize": 229690,
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": [],
@@ -9898,7 +9883,7 @@
       "sysreqs_packages": {}
     },
     {
-      "ref": "installed::/opt/R/4.6.1/lib/R/library/codetools",
+      "ref": "installed::/opt/R/4.6.2/lib/R/library/codetools",
       "package": "codetools",
       "version": "0.2-20",
       "type": "installed",
@@ -9918,15 +9903,15 @@
       "needscompilation": false,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::/opt/R/4.6.1/lib/R/library/codetools",
+        "RemotePkgRef": "installed::/opt/R/4.6.2/lib/R/library/codetools",
         "RemotePkgPlatform": "*",
         "RemoteSha": "0.2-20"
       },
       "sources": [],
       "target": "src/contrib/codetools_0.2-20.tar.gz",
       "platform": "*",
-      "rversion": "R 4.6.1",
-      "built": "R 4.6.1; ; 2026-06-24 19:18:14 UTC; unix",
+      "rversion": "R 4.6.2",
+      "built": "R 4.6.2; ; 2026-10-29 18:38:46 UTC; unix",
       "directpkg": false,
       "license": "GPL",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
@@ -9939,7 +9924,7 @@
   "sysreqs": {
     "os": "linux",
     "distribution": "ubuntu",
-    "version": "24.04",
+    "version": "26.04",
     "url": null,
     "pre_install": ["apt-get -y update"],
     "install_scripts": ["apt-get -y install libcurl4-openssl-dev libssl-dev cmake make libuv1-dev zlib1g-dev pandoc libicu-dev"],
